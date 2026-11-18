@@ -23,9 +23,26 @@
   .filters { position: sticky; top: 0; z-index: 5; background: var(--bg);
     border-bottom: 1px solid var(--line); }
   .filters .inner { max-width: 920px; margin: 0 auto; padding: 10px 20px 12px;
-    display: grid; gap: 8px; grid-template-columns: 2fr 1fr 1fr 1fr; }
-  @media (max-width: 680px) { .filters .inner { grid-template-columns: 1fr 1fr; }
+    display: grid; gap: 8px; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; }
+  @media (max-width: 760px) { .filters .inner { grid-template-columns: 1fr 1fr; }
     .filters .search { grid-column: 1 / -1; } }
+  .multi { position: relative; }
+  .mbtn { width: 100%; padding: 9px 28px 9px 10px; font-size: .95rem; text-align: left; border-radius: 8px;
+    overflow: hidden; text-overflow: ellipsis; position: relative; }
+  .mbtn::after { content: ""; position: absolute; right: 11px; top: 50%; width: 6px; height: 6px; margin-top: -5px;
+    border-right: 1.5px solid var(--muted); border-bottom: 1.5px solid var(--muted); transform: rotate(45deg); }
+  .mbtn.active { border-color: var(--accent); font-weight: 600; }
+  .panel { position: absolute; top: calc(100% + 4px); left: 0; z-index: 20; width: max(100%, 270px);
+    max-width: calc(100vw - 24px); background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    box-shadow: 0 8px 28px rgba(0,0,0,.14); padding: 8px; }
+  .panel.right { left: auto; right: 0; }
+  .panel .msearch { margin-bottom: 6px; padding: 7px 9px; font-size: .9rem; }
+  .opts { max-height: 300px; overflow-y: auto; }
+  .opt { display: flex; align-items: center; gap: 8px; padding: 6px 6px; border-radius: 6px; cursor: pointer; font-size: .92rem; }
+  .opt:hover { background: var(--chip); }
+  .opt input { width: auto; margin: 0; }
+  .opt .n { margin-left: auto; color: var(--muted); font-size: .8rem; }
+  .mfoot { display: flex; justify-content: space-between; gap: 8px; padding-top: 8px; margin-top: 6px; border-top: 1px solid var(--line); }
   input, select { width: 100%; padding: 9px 10px; font: inherit; font-size: .95rem;
     color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 8px; }
   .row2 { grid-column: 1 / -1; display: flex; gap: 14px; align-items: center; flex-wrap: wrap;
@@ -70,8 +87,9 @@
     <option value="7">Next 7 days</option>
     <option value="30">Next 30 days</option>
   </select>
-  <select id="group" aria-label="Category"><option value="">All categories</option></select>
-  <select id="town" aria-label="Town"><option value="">All towns</option></select>
+  <div class="multi" id="m-group"></div>
+  <div class="multi" id="m-town"></div>
+  <div class="multi" id="m-venue"></div>
   <div class="row2">
     <label><input type="checkbox" id="free"> Free only</label>
     <span id="shown"></span>
@@ -179,9 +197,10 @@ function inRange(e, mode, today) {
 function render() {
   const today = todayISO();
   const q = $("q").value.trim().toLowerCase();
-  const mode = $("when").value, g = $("group").value, town = $("town").value, free = $("free").checked;
+  const mode = $("when").value, free = $("free").checked;
+  const pick = f => e => !SEL[f].size || SEL[f].has(e[f]);
   FILTERED = EVENTS.filter(e => e.date >= today && inRange(e, mode, today)
-    && (!g || e.group === g) && (!town || e.town === town) && (!free || isFree(e.price))
+    && pick("group")(e) && pick("town")(e) && pick("venue")(e) && (!free || isFree(e.price))
     && (!q || [e.title, e.venue, e.town, e.category].join(" ").toLowerCase().includes(q)));
   $("shown").textContent = FILTERED.length + " event" + (FILTERED.length === 1 ? "" : "s");
   if (!FILTERED.length) { $("list").innerHTML = '<p class="empty">No events match these filters.</p>'; return; }
@@ -199,25 +218,85 @@ function render() {
   });
   $("list").innerHTML = html;
 }
-function fillSelect(id, values) {
-  const sel = $(id);
-  [...new Set(values.filter(Boolean))].sort().forEach(v => {
-    const o = document.createElement("option"); o.value = v; o.textContent = v; sel.appendChild(o);
+/* ---------- multi-select filters ---------- */
+const SEL = { group: new Set(), town: new Set(), venue: new Set() };
+const LABELS = { group: ["All categories", "categories"], town: ["All towns", "towns"], venue: ["All venues", "venues"] };
+
+function setLabel(f) {
+  const b = $("m-" + f).querySelector(".mbtn"), s = SEL[f];
+  b.textContent = !s.size ? LABELS[f][0] : s.size === 1 ? [...s][0] : s.size + " " + LABELS[f][1];
+  b.classList.toggle("active", s.size > 0);
+  b.title = [...s].join(", ");
+}
+function closeAll(except) {
+  document.querySelectorAll(".multi").forEach(m => {
+    if (m === except) return;
+    m.querySelector(".panel").hidden = true;
+    m.querySelector(".mbtn").setAttribute("aria-expanded", "false");
   });
 }
+function buildMulti(f, searchable) {
+  const root = $("m-" + f), today = todayISO();
+  const counts = {};
+  EVENTS.forEach(e => { if (e[f] && e.date >= today) counts[e[f]] = (counts[e[f]] || 0) + 1; });
+  const values = Object.keys(counts).sort((a, b) => a.localeCompare(b));
+  root.innerHTML = '<button type="button" class="mbtn" aria-haspopup="listbox" aria-expanded="false"></button>'
+    + '<div class="panel" hidden>'
+    + (searchable ? '<input type="search" class="msearch" placeholder="Find a ' + LABELS[f][1].slice(0, -1) + '" aria-label="Find">' : "")
+    + '<div class="opts" role="listbox" aria-multiselectable="true">'
+    + values.map(v => '<label class="opt"><input type="checkbox" value="' + esc(v) + '"><span>' + esc(v)
+      + '</span><span class="n">' + counts[v] + "</span></label>").join("")
+    + '</div><div class="mfoot"><button type="button" class="mclear">Clear</button>'
+    + '<button type="button" class="mdone">Done</button></div></div>';
+  const btn = root.querySelector(".mbtn"), panel = root.querySelector(".panel");
+  btn.addEventListener("click", () => {
+    const open = panel.hidden; closeAll(root); panel.hidden = !open;
+    btn.setAttribute("aria-expanded", String(open));
+    if (open) {
+      panel.classList.remove("right");
+      if (panel.getBoundingClientRect().right > window.innerWidth - 8) panel.classList.add("right");
+      panel.querySelector(".opts").scrollTop = 0;
+      const s = panel.querySelector(".msearch");
+      if (s) { s.value = ""; panel.querySelectorAll(".opt").forEach(o => o.hidden = false); s.focus(); }
+    }
+  });
+  panel.addEventListener("change", ev => {
+    const cb = ev.target; if (!cb.matches('input[type="checkbox"]')) return;
+    cb.checked ? SEL[f].add(cb.value) : SEL[f].delete(cb.value);
+    setLabel(f); render();
+  });
+  const search = panel.querySelector(".msearch");
+  if (search) search.addEventListener("input", () => {
+    const t = search.value.trim().toLowerCase();
+    panel.querySelectorAll(".opt").forEach(o => { o.hidden = t && !o.textContent.toLowerCase().includes(t); });
+  });
+  panel.querySelector(".mclear").addEventListener("click", () => {
+    SEL[f].clear(); panel.querySelectorAll("input[type=checkbox]").forEach(c => c.checked = false);
+    setLabel(f); render();
+  });
+  panel.querySelector(".mdone").addEventListener("click", () => { closeAll(); btn.focus(); });
+  setLabel(f);
+}
+document.addEventListener("click", ev => { if (!ev.target.closest(".multi")) closeAll(); });
+document.addEventListener("keydown", ev => { if (ev.key === "Escape") closeAll(); });
 
 $("list").addEventListener("click", ev => {
   const b = ev.target.closest("[data-ics]"); if (b) downloadIcs(+b.dataset.ics);
 });
-["q", "when", "group", "town", "free"].forEach(id => $(id).addEventListener("input", render));
+["q", "when", "free"].forEach(id => $(id).addEventListener("input", render));
 $("reset").addEventListener("click", () => {
-  $("q").value = ""; $("when").value = "all"; $("group").value = ""; $("town").value = ""; $("free").checked = false; render();
+  $("q").value = ""; $("when").value = "all"; $("free").checked = false;
+  Object.keys(SEL).forEach(f => {
+    SEL[f].clear(); $("m-" + f).querySelectorAll("input[type=checkbox]").forEach(c => c.checked = false); setLabel(f);
+  });
+  render();
 });
 
 fetch("events.json", { cache: "no-cache" }).then(r => r.json()).then(data => {
   EVENTS = data.events || [];
-  fillSelect("group", EVENTS.map(e => e.group));
-  fillSelect("town", EVENTS.map(e => e.town));
+  buildMulti("group", false);
+  buildMulti("town", true);
+  buildMulti("venue", true);
   const upd = data.updated ? new Date(data.updated).toLocaleDateString("en-US",
     { month: "long", day: "numeric", year: "numeric", timeZone: TZ }) : "";
   $("status").textContent = "Bend, Sisters, Redmond and around. " + (upd ? "Last updated " + upd + "." : "");
