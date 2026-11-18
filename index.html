@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Things to Do in Central Oregon</title>
+<meta name="description" content="Upcoming events in Bend and Central Oregon, updated weekly.">
+<style>
+  :root {
+    --bg: #f6f3ee; --card: #fffdf9; --ink: #1f2421; --muted: #6b6f68;
+    --line: #e2ddd3; --accent: #2f5d50; --accent-ink: #fff; --chip: #ece7dd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #171a18; --card: #202422; --ink: #ecebe6; --muted: #9da199;
+      --line: #313632; --accent: #7fb8a4; --accent-ink: #10201a; --chip: #2a2f2c; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  header { padding: 28px 20px 12px; max-width: 920px; margin: 0 auto; }
+  h1 { margin: 0 0 4px; font-size: 1.7rem; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); font-size: .92rem; }
+  .filters { position: sticky; top: 0; z-index: 5; background: var(--bg);
+    border-bottom: 1px solid var(--line); }
+  .filters .inner { max-width: 920px; margin: 0 auto; padding: 10px 20px 12px;
+    display: grid; gap: 8px; grid-template-columns: 2fr 1fr 1fr 1fr; }
+  @media (max-width: 680px) { .filters .inner { grid-template-columns: 1fr 1fr; }
+    .filters .search { grid-column: 1 / -1; } }
+  input, select { width: 100%; padding: 9px 10px; font: inherit; font-size: .95rem;
+    color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 8px; }
+  .row2 { grid-column: 1 / -1; display: flex; gap: 14px; align-items: center; flex-wrap: wrap;
+    font-size: .9rem; color: var(--muted); }
+  .row2 label { display: flex; gap: 6px; align-items: center; cursor: pointer; }
+  .row2 input { width: auto; }
+  .row2 button { margin-left: auto; }
+  main { max-width: 920px; margin: 0 auto; padding: 8px 20px 60px; }
+  h2 { font-size: 1rem; margin: 26px 0 8px; color: var(--muted); font-weight: 600;
+    text-transform: uppercase; letter-spacing: .05em; }
+  .ev { background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 12px 14px; margin-bottom: 8px; display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; }
+  .ev h3 { margin: 0; font-size: 1.02rem; }
+  .ev h3 a { color: inherit; text-decoration: none; }
+  .ev h3 a:hover { text-decoration: underline; }
+  .meta { color: var(--muted); font-size: .9rem; grid-column: 1; }
+  .tags { grid-column: 1; display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+  .tag { background: var(--chip); border-radius: 999px; padding: 2px 9px; font-size: .78rem; }
+  .cal { grid-column: 2; grid-row: 1 / span 3; display: flex; flex-direction: column; gap: 6px; align-self: center; }
+  button, .btn { font: inherit; font-size: .82rem; padding: 6px 10px; border-radius: 7px; cursor: pointer;
+    border: 1px solid var(--line); background: var(--card); color: var(--ink); text-decoration: none;
+    white-space: nowrap; text-align: center; }
+  .btn:hover, button:hover { border-color: var(--accent); }
+  @media (max-width: 560px) { .ev { grid-template-columns: 1fr; }
+    .cal { grid-column: 1; grid-row: auto; flex-direction: row; } }
+  .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+  footer { color: var(--muted); font-size: .8rem; text-align: center; padding: 0 20px 40px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Things to Do in Central Oregon</h1>
+  <div class="sub" id="status">Loading events…</div>
+</header>
+
+<div class="filters"><div class="inner">
+  <input class="search" id="q" type="search" placeholder="Search events, venues, towns" aria-label="Search">
+  <select id="when" aria-label="Date range">
+    <option value="all">Any date</option>
+    <option value="today">Today</option>
+    <option value="weekend">This weekend</option>
+    <option value="7">Next 7 days</option>
+    <option value="30">Next 30 days</option>
+  </select>
+  <select id="group" aria-label="Category"><option value="">All categories</option></select>
+  <select id="town" aria-label="Town"><option value="">All towns</option></select>
+  <div class="row2">
+    <label><input type="checkbox" id="free"> Free only</label>
+    <span id="shown"></span>
+    <button id="reset" type="button">Reset filters</button>
+  </div>
+</div></div>
+
+<main id="list"></main>
+<footer>Updated weekly. Event details come from public calendars; confirm times and tickets on each event's own page.</footer>
+
+<script>
+const TZ = "America/Los_Angeles";
+let EVENTS = [];
+const $ = id => document.getElementById(id);
+
+function todayISO() {
+  return new Intl.DateTimeFormat("en-CA", { timeZone: TZ }).format(new Date());
+}
+function addDays(iso, n) {
+  const d = new Date(iso + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() + n);
+  return d.toISOString().slice(0, 10);
+}
+function dow(iso) { return new Date(iso + "T12:00:00Z").getUTCDay(); }
+function fmtDay(iso) {
+  return new Date(iso + "T12:00:00Z").toLocaleDateString("en-US",
+    { weekday: "long", month: "long", day: "numeric", timeZone: "UTC" });
+}
+function isFree(p) { return /^free\b/i.test(p || ""); }
+function esc(s) { return String(s ?? "").replace(/[&<>"']/g, c =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+function safeUrl(u) { return /^https?:\/\//i.test(u || "") ? u : null; }
+
+/* ---------- calendar helpers ---------- */
+function compact(iso) { return iso.replace(/-/g, ""); }
+function hm(t) { return t.replace(":", "") + "00"; }
+function calTimes(e) {
+  if (e.start) {
+    const endDate = e.endsNextDay ? addDays(e.date, 1) : e.date;
+    return { allDay: false, s: compact(e.date) + "T" + hm(e.start), e: compact(endDate) + "T" + hm(e.end) };
+  }
+  return { allDay: true, s: compact(e.date), e: compact(addDays(e.date, 1)) };
+}
+function details(e) {
+  return [e.when, e.price ? "Price: " + e.price : "", e.link || ""].filter(Boolean).join("\n");
+}
+function place(e) { return [e.venue, e.town ? e.town + ", OR" : ""].filter(Boolean).join(", "); }
+
+function googleUrl(e) {
+  const t = calTimes(e);
+  const p = new URLSearchParams({ action: "TEMPLATE", text: e.title,
+    dates: t.s + "/" + t.e, details: details(e), location: place(e) });
+  if (!t.allDay) p.set("ctz", TZ);
+  return "https://calendar.google.com/calendar/render?" + p.toString();
+}
+function icsEsc(s) { return String(s).replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/[,;]/g, m => "\\" + m); }
+function fold(line) {
+  const out = []; while (line.length > 74) { out.push(line.slice(0, 74)); line = " " + line.slice(74); }
+  out.push(line); return out.join("\r\n");
+}
+const VTZ = ["BEGIN:VTIMEZONE", "TZID:America/Los_Angeles",
+  "BEGIN:DAYLIGHT", "TZOFFSETFROM:-0800", "TZOFFSETTO:-0700", "TZNAME:PDT",
+  "DTSTART:19700308T020000", "RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU", "END:DAYLIGHT",
+  "BEGIN:STANDARD", "TZOFFSETFROM:-0700", "TZOFFSETTO:-0800", "TZNAME:PST",
+  "DTSTART:19701101T020000", "RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU", "END:STANDARD",
+  "END:VTIMEZONE"];
+function icsFor(e) {
+  const t = calTimes(e);
+  const stamp = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z";
+  const uid = compact(e.date) + "-" + e.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 40) + "@bendtodo";
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//bendtodo//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH"];
+  if (!t.allDay) lines.push(...VTZ);
+  lines.push("BEGIN:VEVENT", "UID:" + uid, "DTSTAMP:" + stamp);
+  if (t.allDay) lines.push("DTSTART;VALUE=DATE:" + t.s, "DTEND;VALUE=DATE:" + t.e);
+  else lines.push("DTSTART;TZID=" + TZ + ":" + t.s, "DTEND;TZID=" + TZ + ":" + t.e);
+  lines.push("SUMMARY:" + icsEsc(e.title));
+  if (place(e)) lines.push("LOCATION:" + icsEsc(place(e)));
+  lines.push("DESCRIPTION:" + icsEsc(details(e)));
+  if (safeUrl(e.link)) lines.push("URL:" + e.link);
+  lines.push("END:VEVENT", "END:VCALENDAR");
+  return lines.map(fold).join("\r\n") + "\r\n";
+}
+function downloadIcs(i) {
+  const e = FILTERED[i];
+  const blob = new Blob([icsFor(e)], { type: "text/calendar;charset=utf-8" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = e.title.replace(/[^\w\- ]+/g, "").trim().slice(0, 60) + ".ics";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+}
+
+/* ---------- filtering and render ---------- */
+let FILTERED = [];
+function inRange(e, mode, today) {
+  if (mode === "all") return true;
+  if (mode === "today") return e.date === today;
+  if (mode === "weekend") {
+    const d = dow(today); // 0 Sun ... 6 Sat
+    const start = d === 6 || d === 0 ? today : addDays(today, 5 - d);
+    const end = d === 0 ? today : addDays(today, 7 - d);
+    return e.date >= start && e.date <= end;
+  }
+  return e.date <= addDays(today, parseInt(mode, 10));
+}
+function render() {
+  const today = todayISO();
+  const q = $("q").value.trim().toLowerCase();
+  const mode = $("when").value, g = $("group").value, town = $("town").value, free = $("free").checked;
+  FILTERED = EVENTS.filter(e => e.date >= today && inRange(e, mode, today)
+    && (!g || e.group === g) && (!town || e.town === town) && (!free || isFree(e.price))
+    && (!q || [e.title, e.venue, e.town, e.category].join(" ").toLowerCase().includes(q)));
+  $("shown").textContent = FILTERED.length + " event" + (FILTERED.length === 1 ? "" : "s");
+  if (!FILTERED.length) { $("list").innerHTML = '<p class="empty">No events match these filters.</p>'; return; }
+  let html = "", last = "";
+  FILTERED.forEach((e, i) => {
+    if (e.date !== last) { html += "<h2>" + esc(fmtDay(e.date)) + "</h2>"; last = e.date; }
+    const link = safeUrl(e.link);
+    const title = link ? '<a href="' + esc(link) + '" target="_blank" rel="noopener">' + esc(e.title) + "</a>" : esc(e.title);
+    const meta = [e.when, e.venue, e.town].filter(Boolean).map(esc).join(" · ");
+    html += '<article class="ev"><h3>' + title + '</h3><div class="meta">' + meta + "</div>"
+      + '<div class="tags">' + (e.price ? '<span class="tag">' + esc(e.price) + "</span>" : "")
+      + (e.category ? '<span class="tag">' + esc(e.category) + "</span>" : "") + "</div>"
+      + '<div class="cal"><a class="btn" href="' + esc(googleUrl(e)) + '" target="_blank" rel="noopener">+ Google / Android</a>'
+      + '<button type="button" data-ics="' + i + '">+ Apple / iCal</button></div></article>';
+  });
+  $("list").innerHTML = html;
+}
+function fillSelect(id, values) {
+  const sel = $(id);
+  [...new Set(values.filter(Boolean))].sort().forEach(v => {
+    const o = document.createElement("option"); o.value = v; o.textContent = v; sel.appendChild(o);
+  });
+}
+
+$("list").addEventListener("click", ev => {
+  const b = ev.target.closest("[data-ics]"); if (b) downloadIcs(+b.dataset.ics);
+});
+["q", "when", "group", "town", "free"].forEach(id => $(id).addEventListener("input", render));
+$("reset").addEventListener("click", () => {
+  $("q").value = ""; $("when").value = "all"; $("group").value = ""; $("town").value = ""; $("free").checked = false; render();
+});
+
+fetch("events.json", { cache: "no-cache" }).then(r => r.json()).then(data => {
+  EVENTS = data.events || [];
+  fillSelect("group", EVENTS.map(e => e.group));
+  fillSelect("town", EVENTS.map(e => e.town));
+  const upd = data.updated ? new Date(data.updated).toLocaleDateString("en-US",
+    { month: "long", day: "numeric", year: "numeric", timeZone: TZ }) : "";
+  $("status").textContent = "Bend, Sisters, Redmond and around. " + (upd ? "Last updated " + upd + "." : "");
+  render();
+}).catch(() => { $("status").textContent = "Could not load events."; });
+</script>
+</body>
+</html>
