@@ -23,7 +23,7 @@ except Exception:  # pragma: no cover
     TZ = timezone(timedelta(hours=-8))
 
 EXCLUDED_ORGANIZERS = ["wanderlust", "diycave"]
-HIDDEN_STATUSES = {"declined"}
+HIDDEN_STATUSES = {"declined", "cancelled"}
 
 GROUPS = [
     ("Music", ["music", "dj", "concert"]),
