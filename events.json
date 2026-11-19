@@ -1,7 +1,22 @@
 {
- "updated": "2026-11-18T15:46-08:00",
- "count": 359,
+ "updated": "2026-11-18T16:19-08:00",
+ "count": 449,
  "events": [
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-11-18",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
+  },
   {
    "date": "2026-11-18",
    "title": "DWB November Move & Connect: Essentialism",
@@ -13,7 +28,22 @@
    "source": "Eventbrite",
    "link": "https://www.eventbrite.com/e/dwb-november-move-connect-essentialism-tickets-2004258291503",
    "start": "16:00",
-   "end": "18:00"
+   "end": "18:00",
+   "recurring": false
+  },
+  {
+   "title": "Soak & Sip at Flux",
+   "category": "Wellness",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "venue": "Flux Thermal Lounge",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24161378",
+   "recurring": true,
+   "date": "2026-11-18",
+   "when": "Tue-Thu 4-9 p.m.",
+   "start": "16:00",
+   "end": "21:00"
   },
   {
    "date": "2026-11-18",
@@ -27,7 +57,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24324363",
    "start": "16:30",
-   "end": "18:30"
+   "end": "18:30",
+   "recurring": false
   },
   {
    "date": "2026-11-18",
@@ -41,7 +72,8 @@
    "source": "Bend Chamber",
    "link": "https://www.bendchamber.org/event/bend-et-social-waypoint-hotel",
    "start": "17:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-11-18",
@@ -55,7 +87,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17288370",
    "start": "17:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-11-18",
@@ -69,7 +102,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24372894",
    "start": "17:30",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
+  },
+  {
+   "title": "Bend Chess and Go Club",
+   "category": "Games",
+   "group": "Social & Networking",
+   "town": "Bend",
+   "price": "Free",
+   "venue": "Crux Fermentation Project",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=22478213",
+   "recurring": true,
+   "date": "2026-11-18",
+   "when": "Wednesdays 6-9 p.m.",
+   "start": "18:00",
+   "end": "21:00"
   },
   {
    "date": "2026-11-18",
@@ -83,7 +132,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24319678",
    "start": "18:00",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-11-18",
@@ -97,7 +147,38 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24347865",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
+  },
+  {
+   "title": "Scrabble Club",
+   "category": "Games",
+   "group": "Social & Networking",
+   "town": "Bend",
+   "price": "Free",
+   "venue": "Market of Choice",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=22848981",
+   "recurring": true,
+   "date": "2026-11-18",
+   "when": "Wednesdays 6-8:30 p.m.",
+   "start": "18:00",
+   "end": "20:30"
+  },
+  {
+   "title": "Argentine Tango Class & Practice",
+   "category": "Dance",
+   "group": "Film & Stage",
+   "town": "Bend",
+   "price": "$5-$10",
+   "venue": "Sons of Norway Hall",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24330436",
+   "recurring": true,
+   "date": "2026-11-18",
+   "when": "Wednesdays 6:30-9:30 p.m.",
+   "start": "18:30",
+   "end": "21:30"
   },
   {
    "date": "2026-11-18",
@@ -111,7 +192,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24307886",
    "start": "19:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2026-11-18",
@@ -125,7 +207,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24198376",
    "start": "19:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2026-11-18",
@@ -139,7 +222,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24193073",
    "start": "19:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2026-11-18",
@@ -153,7 +237,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24368554",
    "start": "19:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2026-11-18",
@@ -167,7 +252,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24342364",
    "start": "19:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-11-18",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
   },
   {
    "date": "2026-11-18",
@@ -181,7 +282,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381616",
    "start": "19:30",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2026-11-18",
@@ -195,7 +297,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24378616",
    "start": "20:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
   },
   {
    "date": "2026-11-18",
@@ -206,7 +309,8 @@
    "when": "Wed",
    "venue": "Dogwood at the Pine Shed",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/opportunity-knocks-november-mixer-tickets-2004672376041"
+   "link": "https://www.eventbrite.com/e/opportunity-knocks-november-mixer-tickets-2004672376041",
+   "recurring": false
   },
   {
    "date": "2026-11-18",
@@ -217,7 +321,8 @@
    "when": "Wed",
    "venue": "Oblivion Pour House",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/sw-bend-neighborhood-district-annual-meeting-tickets-2003389414669"
+   "link": "https://www.eventbrite.com/e/sw-bend-neighborhood-district-annual-meeting-tickets-2003389414669",
+   "recurring": false
   },
   {
    "date": "2026-11-19",
@@ -231,7 +336,8 @@
    "source": "Meetup",
    "link": "https://www.meetup.com/pnw-womens-outdoor-group-central-oregon-chapter/events/316857691/",
    "start": "09:00",
-   "end": "11:00"
+   "end": "11:00",
+   "recurring": false
   },
   {
    "date": "2026-11-19",
@@ -245,7 +351,23 @@
    "source": "Bend Chamber",
    "link": "https://www.bendchamber.org/event/ribbon-cutting-central-oregon-locavore",
    "start": "09:30",
-   "end": "11:30"
+   "end": "11:30",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-11-19",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-11-19",
@@ -258,7 +380,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24372896",
    "start": "12:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2026-11-19",
@@ -272,7 +395,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24388981",
    "start": "14:00",
-   "end": "17:00"
+   "end": "17:00",
+   "recurring": false
   },
   {
    "date": "2026-11-19",
@@ -286,7 +410,22 @@
    "source": "High Desert Museum",
    "link": "https://www.highdesertmuseum.org/whats-on/events/",
    "start": "16:00",
-   "end": "18:00"
+   "end": "18:00",
+   "recurring": false
+  },
+  {
+   "title": "Soak & Sip at Flux",
+   "category": "Wellness",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "venue": "Flux Thermal Lounge",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24161378",
+   "recurring": true,
+   "date": "2026-11-19",
+   "when": "Tue-Thu 4-9 p.m.",
+   "start": "16:00",
+   "end": "21:00"
   },
   {
    "date": "2026-11-19",
@@ -300,7 +439,8 @@
    "source": "EDCO",
    "link": "https://www.eventbrite.com/e/november-2026-central-oregon-pubtalk-at-open-space-tickets-2003115442210",
    "start": "16:30",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": true
   },
   {
    "date": "2026-11-19",
@@ -314,7 +454,8 @@
    "source": "OSU-Cascades (Bend Beavs Central)",
    "link": "https://bendbeavscentral.osucascades.edu/rsvp?id=2137107",
    "start": "17:20",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-11-19",
@@ -328,7 +469,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24369613",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-11-19",
@@ -342,7 +484,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24360064",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-11-19",
@@ -356,7 +499,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24388685",
    "start": "18:00",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-11-19",
@@ -370,7 +514,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24349048",
    "start": "18:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
+  },
+  {
+   "title": "Suttle Lodge Fireside Concert Series",
+   "category": "Live Music",
+   "group": "Music",
+   "town": "Sisters",
+   "price": "$12.60",
+   "venue": "The Suttle Lodge",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24368464",
+   "recurring": true,
+   "date": "2026-11-19",
+   "when": "Thursdays 6 p.m. through Apr 29",
+   "start": "18:00",
+   "end": "20:00"
   },
   {
    "date": "2026-11-19",
@@ -384,7 +544,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24386417",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-11-19",
@@ -398,7 +559,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/16655056",
    "start": "18:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": true
   },
   {
    "date": "2026-11-19",
@@ -412,7 +574,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24358845",
    "start": "18:30",
-   "end": "21:30"
+   "end": "21:30",
+   "recurring": false
   },
   {
    "date": "2026-11-19",
@@ -426,7 +589,23 @@
    "source": "Meetup",
    "link": "https://www.meetup.com/new-friends-bend/events/317286499/",
    "start": "18:30",
-   "end": "20:30"
+   "end": "20:30",
+   "recurring": false
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-11-19",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
   },
   {
    "date": "2026-11-19",
@@ -440,7 +619,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24351247",
    "start": "19:30",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2026-11-19",
@@ -453,7 +633,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24300803",
    "start": "20:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
   },
   {
    "date": "2026-11-19",
@@ -466,7 +647,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24335898",
    "start": "20:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
   },
   {
    "date": "2026-11-19",
@@ -477,7 +659,8 @@
    "when": "Thu",
    "venue": "Midtown Yacht Club",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/central-oregon-creatives-november-casual-meetup-at-yacht-club-tickets-2004721875094"
+   "link": "https://www.eventbrite.com/e/central-oregon-creatives-november-casual-meetup-at-yacht-club-tickets-2004721875094",
+   "recurring": false
   },
   {
    "date": "2026-11-19",
@@ -488,7 +671,8 @@
    "when": "Thu",
    "venue": "Embark Coworking",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/odlt-9th-anniversary-event-tickets-1998604580100"
+   "link": "https://www.eventbrite.com/e/odlt-9th-anniversary-event-tickets-1998604580100",
+   "recurring": false
   },
   {
    "date": "2026-11-19",
@@ -500,7 +684,8 @@
    "when": "Thu-Fri",
    "venue": "Central Library",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24330950"
+   "link": "https://community.bendsource.com/bend/Event?oid=24330950",
+   "recurring": false
   },
   {
    "date": "2026-11-20",
@@ -514,7 +699,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=23844595",
    "start": "10:00",
-   "end": "11:30"
+   "end": "11:30",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-11-20",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-11-20",
@@ -528,7 +729,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24353971",
    "start": "17:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-11-20",
@@ -542,7 +744,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24334014",
    "start": "17:00",
-   "end": "20:30"
+   "end": "20:30",
+   "recurring": false
   },
   {
    "date": "2026-11-20",
@@ -556,7 +759,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24358855",
    "start": "17:15",
-   "end": "19:15"
+   "end": "19:15",
+   "recurring": false
   },
   {
    "date": "2026-11-20",
@@ -570,7 +774,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24349052",
    "start": "18:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-11-20",
@@ -584,7 +789,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381949",
    "start": "18:30",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-11-20",
@@ -598,7 +804,8 @@
    "source": "COCC",
    "link": "https://cocc.edu/home/events/event-details/e3a49c42-d3ac-4d64-a6a0-aebf0463c1cc",
    "start": "19:00",
-   "end": "20:30"
+   "end": "20:30",
+   "recurring": false
   },
   {
    "date": "2026-11-20",
@@ -612,7 +819,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24386561",
    "start": "19:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2026-11-20",
@@ -626,7 +834,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24386563",
    "start": "19:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2026-11-20",
@@ -640,7 +849,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24375159",
    "start": "19:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2026-11-20",
@@ -654,7 +864,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24388558",
    "start": "19:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-11-20",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
   },
   {
    "date": "2026-11-20",
@@ -668,7 +894,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24181148",
    "start": "19:30",
-   "end": "21:30"
+   "end": "21:30",
+   "recurring": false
   },
   {
    "date": "2026-11-20",
@@ -682,7 +909,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24353901",
    "start": "20:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
   },
   {
    "date": "2026-11-20",
@@ -696,7 +924,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24150332",
    "start": "20:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
   },
   {
    "date": "2026-11-20",
@@ -710,7 +939,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24389069",
    "start": "20:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
   },
   {
    "date": "2026-11-20",
@@ -723,7 +953,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24357377",
    "start": "20:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
   },
   {
    "date": "2026-11-20",
@@ -734,7 +965,8 @@
    "when": "Nov 20-22",
    "venue": "Deschutes County Fair & Expo",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/27th-annual-redmond-holiday-food-gift-festival-nov-20th-22nd-tickets-2003619826838"
+   "link": "https://www.eventbrite.com/e/27th-annual-redmond-holiday-food-gift-festival-nov-20th-22nd-tickets-2003619826838",
+   "recurring": false
   },
   {
    "date": "2026-11-20",
@@ -745,7 +977,8 @@
    "when": "Nov 20-29 weekends",
    "venue": "Viaggio Wine Merchant",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24387155"
+   "link": "https://community.bendsource.com/bend/Event?oid=24387155",
+   "recurring": false
   },
   {
    "date": "2026-11-20",
@@ -757,7 +990,8 @@
    "when": "Fri",
    "venue": "Bleu Bite Catering",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24363057"
+   "link": "https://community.bendsource.com/bend/Event?oid=24363057",
+   "recurring": false
   },
   {
    "date": "2026-11-20",
@@ -769,7 +1003,8 @@
    "when": "Fri",
    "venue": "Madras Performing Arts Center",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/these-sacred-hills-free-community-film-screening-tickets-2004611024537"
+   "link": "https://www.eventbrite.com/e/these-sacred-hills-free-community-film-screening-tickets-2004611024537",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -783,7 +1018,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24366629",
    "start": "08:30",
-   "end": "10:30"
+   "end": "10:30",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -797,7 +1033,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24277312",
    "start": "09:00",
-   "end": "15:00"
+   "end": "15:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -811,7 +1048,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24385651",
    "start": "10:00",
-   "end": "16:15"
+   "end": "16:15",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -825,7 +1063,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24367108",
    "start": "10:00",
-   "end": "11:15"
+   "end": "11:15",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -839,7 +1078,23 @@
    "source": "High Desert Museum",
    "link": "https://www.highdesertmuseum.org/whats-on/events/",
    "start": "10:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-11-21",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-11-21",
@@ -853,7 +1108,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17685762",
    "start": "12:00",
-   "end": "13:30"
+   "end": "13:30",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -867,7 +1123,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24369682",
    "start": "12:00",
-   "end": "18:00"
+   "end": "18:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -880,7 +1137,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24380471",
    "start": "12:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -894,7 +1152,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24374649",
    "start": "12:00",
-   "end": "14:00"
+   "end": "14:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -908,7 +1167,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24335801",
    "start": "12:00",
-   "end": "13:00"
+   "end": "13:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -922,7 +1182,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24352238",
    "start": "13:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -936,7 +1197,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24347449",
    "start": "13:00",
-   "end": "15:00"
+   "end": "15:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -950,7 +1212,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24358857",
    "start": "13:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": true
   },
   {
    "date": "2026-11-21",
@@ -964,7 +1227,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24365089",
    "start": "14:00",
-   "end": "15:00"
+   "end": "15:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -978,7 +1242,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24330506",
    "start": "14:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -992,7 +1257,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24371418",
    "start": "14:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1006,7 +1272,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24347599",
    "start": "14:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1020,7 +1287,8 @@
    "link": "https://community.bendsource.com/bend/Event?oid=24381519",
    "start": "15:00",
    "end": "00:00",
-   "endsNextDay": true
+   "endsNextDay": true,
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1034,7 +1302,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24380102",
    "start": "15:00",
-   "end": "17:00"
+   "end": "17:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1048,7 +1317,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24314040",
    "start": "17:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1062,7 +1332,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24354941",
    "start": "17:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1076,7 +1347,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381383",
    "start": "17:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1089,7 +1361,8 @@
    "source": "Meetup",
    "link": "https://www.meetup.com/bend-social-group/events/317447920/",
    "start": "17:30",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1103,7 +1376,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24369609",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1116,7 +1390,8 @@
    "source": "Eventbrite",
    "link": "https://www.eventbrite.com/e/dancing-with-the-central-oregon-stars-2026-600-pm-evening-show-tickets-1998924189059",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1130,7 +1405,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24360191",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": true
   },
   {
    "date": "2026-11-21",
@@ -1144,7 +1420,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24334097",
    "start": "18:30",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1158,7 +1435,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24387341",
    "start": "18:30",
-   "end": "20:30"
+   "end": "20:30",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1172,7 +1450,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24383378",
    "start": "18:30",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1185,7 +1464,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24353973",
    "start": "19:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1198,7 +1478,38 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24329198",
    "start": "19:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
+  },
+  {
+   "title": "Bend Adult Volleyball",
+   "category": "Sport",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "price": "$10",
+   "venue": "Bend Hoops",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=17968092",
+   "recurring": true,
+   "date": "2026-11-21",
+   "when": "Sat 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-11-21",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
   },
   {
    "date": "2026-11-21",
@@ -1212,7 +1523,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24386569",
    "start": "19:30",
-   "end": "21:30"
+   "end": "21:30",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1226,7 +1538,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24247351",
    "start": "19:30",
-   "end": "21:30"
+   "end": "21:30",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1239,7 +1552,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24357465",
    "start": "20:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1251,7 +1565,8 @@
    "when": "Sat",
    "venue": "Woodhaven Estates",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24368094"
+   "link": "https://community.bendsource.com/bend/Event?oid=24368094",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1262,7 +1577,8 @@
    "when": "Sat",
    "venue": "Oxford Hotel",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/mosaic-art-classes-bend-turkish-lamp-workshop-tickets-1998744448450"
+   "link": "https://www.eventbrite.com/e/mosaic-art-classes-bend-turkish-lamp-workshop-tickets-1998744448450",
+   "recurring": false
   },
   {
    "date": "2026-11-21",
@@ -1274,7 +1590,8 @@
    "when": "Nov 21-29, 11-4",
    "venue": "High Desert Museum",
    "source": "High Desert Museum",
-   "link": "https://www.highdesertmuseum.org/whats-on/events/"
+   "link": "https://www.highdesertmuseum.org/whats-on/events/",
+   "recurring": false
   },
   {
    "date": "2026-11-22",
@@ -1287,7 +1604,23 @@
    "source": "Eventbrite",
    "link": "https://www.eventbrite.com/e/notcho-grandmas-bingo-council-on-aging-of-central-oregon-tickets-1982085965479",
    "start": "09:30",
-   "end": "11:30"
+   "end": "11:30",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-11-22",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-11-22",
@@ -1301,7 +1634,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24372892",
    "start": "13:00",
-   "end": "15:00"
+   "end": "15:00",
+   "recurring": false
   },
   {
    "date": "2026-11-22",
@@ -1315,7 +1649,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24347451",
    "start": "13:00",
-   "end": "15:00"
+   "end": "15:00",
+   "recurring": false
   },
   {
    "date": "2026-11-22",
@@ -1329,7 +1664,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24371230",
    "start": "14:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": false
   },
   {
    "date": "2026-11-22",
@@ -1343,7 +1679,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24369611",
    "start": "14:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": false
   },
   {
    "date": "2026-11-22",
@@ -1357,7 +1694,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24299942",
    "start": "15:00",
-   "end": "17:00"
+   "end": "17:00",
+   "recurring": false
   },
   {
    "date": "2026-11-22",
@@ -1371,7 +1709,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24390386",
    "start": "16:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-11-22",
@@ -1385,7 +1724,38 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24360193",
    "start": "17:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
+  },
+  {
+   "title": "Bend Adult Volleyball",
+   "category": "Sport",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "price": "$10",
+   "venue": "Bend Hoops",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=17968092",
+   "recurring": true,
+   "date": "2026-11-22",
+   "when": "Sun 7-9 p.m.",
+   "start": "19:00",
+   "end": "21:00"
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-11-22",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
   },
   {
    "date": "2026-11-22",
@@ -1399,7 +1769,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24247353",
    "start": "19:30",
-   "end": "21:30"
+   "end": "21:30",
+   "recurring": false
   },
   {
    "date": "2026-11-22",
@@ -1410,7 +1781,8 @@
    "when": "Sun",
    "venue": "Blissful Spoon",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/holiday-afternoon-tea-benefitting-street-dog-hero-tickets-2003682417047"
+   "link": "https://www.eventbrite.com/e/holiday-afternoon-tea-benefitting-street-dog-hero-tickets-2003682417047",
+   "recurring": false
   },
   {
    "date": "2026-11-22",
@@ -1421,7 +1793,23 @@
    "when": "Sun",
    "venue": "barre3",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.ca/e/slope-ready-a-snowsport-strength-series-tickets-2004097362159"
+   "link": "https://www.eventbrite.ca/e/slope-ready-a-snowsport-strength-series-tickets-2004097362159",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-11-23",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-11-23",
@@ -1435,7 +1823,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24358861",
    "start": "17:15",
-   "end": "19:15"
+   "end": "19:15",
+   "recurring": false
   },
   {
    "date": "2026-11-23",
@@ -1449,7 +1838,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24374946",
    "start": "17:30",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-11-23",
@@ -1463,7 +1853,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24323831",
    "start": "18:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-11-23",
@@ -1477,7 +1868,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24325669",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-11-23",
@@ -1490,7 +1882,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24358706",
    "start": "19:30",
-   "end": "21:30"
+   "end": "21:30",
+   "recurring": false
   },
   {
    "date": "2026-11-23",
@@ -1501,7 +1894,23 @@
    "when": "Mon",
    "venue": "Embark",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/room-to-ride-film-festival-tickets-2003632038363"
+   "link": "https://www.eventbrite.com/e/room-to-ride-film-festival-tickets-2003632038363",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-11-24",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-11-24",
@@ -1515,7 +1924,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24389150",
    "start": "10:30",
-   "end": "12:30"
+   "end": "12:30",
+   "recurring": false
   },
   {
    "date": "2026-11-24",
@@ -1529,7 +1939,22 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17331124",
    "start": "15:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": false
+  },
+  {
+   "title": "Soak & Sip at Flux",
+   "category": "Wellness",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "venue": "Flux Thermal Lounge",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24161378",
+   "recurring": true,
+   "date": "2026-11-24",
+   "when": "Tue-Thu 4-9 p.m.",
+   "start": "16:00",
+   "end": "21:00"
   },
   {
    "date": "2026-11-24",
@@ -1542,7 +1967,8 @@
    "source": "Meetup",
    "link": "https://www.meetup.com/bendskiclub/events/317442520/",
    "start": "16:30",
-   "end": "18:30"
+   "end": "18:30",
+   "recurring": false
   },
   {
    "date": "2026-11-24",
@@ -1556,7 +1982,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24387010",
    "start": "17:30",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-11-24",
@@ -1569,7 +1996,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24357474",
    "start": "19:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2026-11-24",
@@ -1580,7 +2008,52 @@
    "when": "Tue",
    "venue": "Restaurant of the Week",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/ambition-or-bust-dinner-with-dreamers-bend-tickets-1976799622886"
+   "link": "https://www.eventbrite.com/e/ambition-or-bust-dinner-with-dreamers-bend-tickets-1976799622886",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-11-25",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  {
+   "title": "Soak & Sip at Flux",
+   "category": "Wellness",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "venue": "Flux Thermal Lounge",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24161378",
+   "recurring": true,
+   "date": "2026-11-25",
+   "when": "Tue-Thu 4-9 p.m.",
+   "start": "16:00",
+   "end": "21:00"
+  },
+  {
+   "title": "Bend Chess and Go Club",
+   "category": "Games",
+   "group": "Social & Networking",
+   "town": "Bend",
+   "price": "Free",
+   "venue": "Crux Fermentation Project",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=22478213",
+   "recurring": true,
+   "date": "2026-11-25",
+   "when": "Wednesdays 6-9 p.m.",
+   "start": "18:00",
+   "end": "21:00"
   },
   {
    "date": "2026-11-25",
@@ -1594,7 +2067,38 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24360262",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
+  },
+  {
+   "title": "Scrabble Club",
+   "category": "Games",
+   "group": "Social & Networking",
+   "town": "Bend",
+   "price": "Free",
+   "venue": "Market of Choice",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=22848981",
+   "recurring": true,
+   "date": "2026-11-25",
+   "when": "Wednesdays 6-8:30 p.m.",
+   "start": "18:00",
+   "end": "20:30"
+  },
+  {
+   "title": "Argentine Tango Class & Practice",
+   "category": "Dance",
+   "group": "Film & Stage",
+   "town": "Bend",
+   "price": "$5-$10",
+   "venue": "Sons of Norway Hall",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24330436",
+   "recurring": true,
+   "date": "2026-11-25",
+   "when": "Wednesdays 6:30-9:30 p.m.",
+   "start": "18:30",
+   "end": "21:30"
   },
   {
    "date": "2026-11-25",
@@ -1608,7 +2112,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24386571",
    "start": "19:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-11-25",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
   },
   {
    "date": "2026-11-26",
@@ -1622,7 +2142,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24374873",
    "start": "09:00",
-   "end": "10:00"
+   "end": "10:00",
+   "recurring": false
   },
   {
    "date": "2026-11-26",
@@ -1636,7 +2157,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24298248",
    "start": "09:00",
-   "end": "11:00"
+   "end": "11:00",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-11-26",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-11-26",
@@ -1650,7 +2187,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24299928",
    "start": "12:00",
-   "end": "17:00"
+   "end": "17:00",
+   "recurring": false
   },
   {
    "date": "2026-11-26",
@@ -1664,7 +2202,52 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24335819",
    "start": "14:00",
-   "end": "20:30"
+   "end": "20:30",
+   "recurring": false
+  },
+  {
+   "title": "Soak & Sip at Flux",
+   "category": "Wellness",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "venue": "Flux Thermal Lounge",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24161378",
+   "recurring": true,
+   "date": "2026-11-26",
+   "when": "Tue-Thu 4-9 p.m.",
+   "start": "16:00",
+   "end": "21:00"
+  },
+  {
+   "title": "Suttle Lodge Fireside Concert Series",
+   "category": "Live Music",
+   "group": "Music",
+   "town": "Sisters",
+   "price": "$12.60",
+   "venue": "The Suttle Lodge",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24368464",
+   "recurring": true,
+   "date": "2026-11-26",
+   "when": "Thursdays 6 p.m. through Apr 29",
+   "start": "18:00",
+   "end": "20:00"
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-11-26",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
   },
   {
    "date": "2026-11-27",
@@ -1678,7 +2261,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24155055",
    "start": "10:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-11-27",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-11-27",
@@ -1691,7 +2290,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24335808",
    "start": "17:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-11-27",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
   },
   {
    "date": "2026-11-27",
@@ -1704,7 +2319,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24357371",
    "start": "20:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
   },
   {
    "date": "2026-11-27",
@@ -1715,7 +2331,8 @@
    "when": "Nov 27-Dec 30",
    "venue": "McMenamins Old St. Francis",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24388832"
+   "link": "https://community.bendsource.com/bend/Event?oid=24388832",
+   "recurring": false
   },
   {
    "date": "2026-11-27",
@@ -1727,7 +2344,8 @@
    "when": "Fri-Sat through Dec",
    "venue": "River's Edge Golf Course",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24378693"
+   "link": "https://community.bendsource.com/bend/Event?oid=24378693",
+   "recurring": false
   },
   {
    "date": "2026-11-28",
@@ -1741,7 +2359,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381517",
    "start": "09:00",
-   "end": "13:00"
+   "end": "13:00",
+   "recurring": false
   },
   {
    "date": "2026-11-28",
@@ -1754,6 +2373,22 @@
    "venue": "Juniper Preserve",
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24334414",
+   "start": "10:00",
+   "end": "15:00",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-11-28",
+   "when": "Daily 10 a.m.-3 p.m.",
    "start": "10:00",
    "end": "15:00"
   },
@@ -1769,7 +2404,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24344381",
    "start": "11:00",
-   "end": "17:30"
+   "end": "17:30",
+   "recurring": false
   },
   {
    "date": "2026-11-28",
@@ -1783,7 +2419,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24355055",
    "start": "12:00",
-   "end": "17:00"
+   "end": "17:00",
+   "recurring": false
   },
   {
    "date": "2026-11-28",
@@ -1797,7 +2434,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17331162",
    "start": "14:00",
-   "end": "15:00"
+   "end": "15:00",
+   "recurring": false
   },
   {
    "date": "2026-11-28",
@@ -1810,7 +2448,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24376629",
    "start": "14:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-11-28",
@@ -1824,7 +2463,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381853",
    "start": "14:30",
-   "end": "17:00"
+   "end": "17:00",
+   "recurring": false
   },
   {
    "date": "2026-11-28",
@@ -1838,7 +2478,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381515",
    "start": "15:00",
-   "end": "17:00"
+   "end": "17:00",
+   "recurring": false
   },
   {
    "date": "2026-11-28",
@@ -1852,7 +2493,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24351957",
    "start": "16:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
   },
   {
    "date": "2026-11-28",
@@ -1865,7 +2507,8 @@
    "source": "Meetup",
    "link": "https://www.meetup.com/bend-social-group/events/317165873/",
    "start": "16:45",
-   "end": "18:45"
+   "end": "18:45",
+   "recurring": false
   },
   {
    "date": "2026-11-28",
@@ -1879,7 +2522,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24389153",
    "start": "17:30",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-11-28",
@@ -1893,7 +2537,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24378097",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": true
   },
   {
    "date": "2026-11-28",
@@ -1907,7 +2552,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24360195",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": true
   },
   {
    "date": "2026-11-28",
@@ -1922,7 +2568,8 @@
    "link": "https://community.bendsource.com/bend/Event?oid=24368387",
    "start": "18:00",
    "end": "00:00",
-   "endsNextDay": true
+   "endsNextDay": true,
+   "recurring": false
   },
   {
    "date": "2026-11-28",
@@ -1936,7 +2583,38 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24385142",
    "start": "19:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
+  },
+  {
+   "title": "Bend Adult Volleyball",
+   "category": "Sport",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "price": "$10",
+   "venue": "Bend Hoops",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=17968092",
+   "recurring": true,
+   "date": "2026-11-28",
+   "when": "Sat 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-11-28",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
   },
   {
    "date": "2026-11-28",
@@ -1949,7 +2627,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24358618",
    "start": "20:00",
-   "end": "22:30"
+   "end": "22:30",
+   "recurring": false
   },
   {
    "date": "2026-11-28",
@@ -1961,7 +2640,8 @@
    "when": "Sat-Sun 10-5",
    "venue": "Somewhere That's Green",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24363149"
+   "link": "https://community.bendsource.com/bend/Event?oid=24363149",
+   "recurring": false
   },
   {
    "date": "2026-11-28",
@@ -1973,7 +2653,8 @@
    "when": "Sat-Sun 11-3",
    "venue": "The Grove Market Hall",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24381385"
+   "link": "https://community.bendsource.com/bend/Event?oid=24381385",
+   "recurring": false
   },
   {
    "date": "2026-11-28",
@@ -1985,7 +2666,23 @@
    "when": "Sat-Sun",
    "venue": "Tower Theatre",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24379799"
+   "link": "https://community.bendsource.com/bend/Event?oid=24379799",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-11-29",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-11-29",
@@ -1998,7 +2695,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24376226",
    "start": "11:00",
-   "end": "13:00"
+   "end": "13:00",
+   "recurring": false
   },
   {
    "date": "2026-11-29",
@@ -2012,7 +2710,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24389157",
    "start": "14:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": false
   },
   {
    "date": "2026-11-29",
@@ -2026,7 +2725,53 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24360197",
    "start": "17:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
+  },
+  {
+   "title": "Bend Adult Volleyball",
+   "category": "Sport",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "price": "$10",
+   "venue": "Bend Hoops",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=17968092",
+   "recurring": true,
+   "date": "2026-11-29",
+   "when": "Sun 7-9 p.m.",
+   "start": "19:00",
+   "end": "21:00"
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-11-29",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-11-30",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-11-30",
@@ -2040,7 +2785,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17293949",
    "start": "17:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-11-30",
@@ -2054,7 +2800,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24347453",
    "start": "17:30",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-11-30",
@@ -2068,7 +2815,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24358926",
    "start": "17:30",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-12-01",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-12-01",
@@ -2082,7 +2845,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17348647",
    "start": "12:00",
-   "end": "13:30"
+   "end": "13:30",
+   "recurring": false
   },
   {
    "date": "2026-12-01",
@@ -2096,7 +2860,22 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17369784",
    "start": "16:00",
-   "end": "18:00"
+   "end": "18:00",
+   "recurring": false
+  },
+  {
+   "title": "Soak & Sip at Flux",
+   "category": "Wellness",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "venue": "Flux Thermal Lounge",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24161378",
+   "recurring": true,
+   "date": "2026-12-01",
+   "when": "Tue-Thu 4-9 p.m.",
+   "start": "16:00",
+   "end": "21:00"
   },
   {
    "date": "2026-12-01",
@@ -2110,7 +2889,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24380189",
    "start": "16:15",
-   "end": "17:30"
+   "end": "17:30",
+   "recurring": false
   },
   {
    "date": "2026-12-01",
@@ -2124,7 +2904,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24378099",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": true
   },
   {
    "date": "2026-12-01",
@@ -2138,7 +2919,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17798834",
    "start": "18:30",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-12-01",
@@ -2152,7 +2934,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24368239",
    "start": "18:30",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-12-01",
@@ -2166,7 +2949,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24287660",
    "start": "19:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
   },
   {
    "date": "2026-12-01",
@@ -2180,7 +2964,23 @@
    "source": "Tower Theatre",
    "link": "https://www.towertheatre.org/event/jake-shimabukuro-holidays-in-hawaii-12-1-26",
    "start": "19:30",
-   "end": "21:30"
+   "end": "21:30",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-12-02",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-12-02",
@@ -2194,7 +2994,22 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17351083",
    "start": "13:00",
-   "end": "15:00"
+   "end": "15:00",
+   "recurring": false
+  },
+  {
+   "title": "Soak & Sip at Flux",
+   "category": "Wellness",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "venue": "Flux Thermal Lounge",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24161378",
+   "recurring": true,
+   "date": "2026-12-02",
+   "when": "Tue-Thu 4-9 p.m.",
+   "start": "16:00",
+   "end": "21:00"
   },
   {
    "date": "2026-12-02",
@@ -2208,7 +3023,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24348001",
    "start": "16:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-02",
@@ -2222,7 +3038,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381863",
    "start": "17:30",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-12-02",
@@ -2236,7 +3053,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24332642",
    "start": "17:30",
-   "end": "18:30"
+   "end": "18:30",
+   "recurring": false
+  },
+  {
+   "title": "Bend Chess and Go Club",
+   "category": "Games",
+   "group": "Social & Networking",
+   "town": "Bend",
+   "price": "Free",
+   "venue": "Crux Fermentation Project",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=22478213",
+   "recurring": true,
+   "date": "2026-12-02",
+   "when": "Wednesdays 6-9 p.m.",
+   "start": "18:00",
+   "end": "21:00"
   },
   {
    "date": "2026-12-02",
@@ -2250,7 +3083,23 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/16992671",
    "start": "18:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
+  },
+  {
+   "title": "Scrabble Club",
+   "category": "Games",
+   "group": "Social & Networking",
+   "town": "Bend",
+   "price": "Free",
+   "venue": "Market of Choice",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=22848981",
+   "recurring": true,
+   "date": "2026-12-02",
+   "when": "Wednesdays 6-8:30 p.m.",
+   "start": "18:00",
+   "end": "20:30"
   },
   {
    "date": "2026-12-02",
@@ -2264,7 +3113,38 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24388909",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
+  },
+  {
+   "title": "Argentine Tango Class & Practice",
+   "category": "Dance",
+   "group": "Film & Stage",
+   "town": "Bend",
+   "price": "$5-$10",
+   "venue": "Sons of Norway Hall",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24330436",
+   "recurring": true,
+   "date": "2026-12-02",
+   "when": "Wednesdays 6:30-9:30 p.m.",
+   "start": "18:30",
+   "end": "21:30"
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-12-02",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
   },
   {
    "date": "2026-12-03",
@@ -2278,7 +3158,37 @@
    "source": "High Desert Museum",
    "link": "https://www.highdesertmuseum.org/whats-on/events/",
    "start": "09:00",
-   "end": "10:00"
+   "end": "10:00",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-12-03",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  {
+   "title": "Soak & Sip at Flux",
+   "category": "Wellness",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "venue": "Flux Thermal Lounge",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24161378",
+   "recurring": true,
+   "date": "2026-12-03",
+   "when": "Tue-Thu 4-9 p.m.",
+   "start": "16:00",
+   "end": "21:00"
   },
   {
    "date": "2026-12-03",
@@ -2292,7 +3202,8 @@
    "source": "High Desert Museum",
    "link": "https://www.highdesertmuseum.org/whats-on/events/",
    "start": "16:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-12-03",
@@ -2306,7 +3217,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17438537",
    "start": "17:00",
-   "end": "18:00"
+   "end": "18:00",
+   "recurring": false
   },
   {
    "date": "2026-12-03",
@@ -2320,7 +3232,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381938",
    "start": "17:30",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-12-03",
@@ -2334,7 +3247,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24235438",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-03",
@@ -2348,7 +3262,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24281896",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-03",
@@ -2361,6 +3276,22 @@
    "venue": "Arome",
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17799404",
+   "start": "18:00",
+   "end": "20:00",
+   "recurring": false
+  },
+  {
+   "title": "Suttle Lodge Fireside Concert Series",
+   "category": "Live Music",
+   "group": "Music",
+   "town": "Sisters",
+   "price": "$12.60",
+   "venue": "The Suttle Lodge",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24368464",
+   "recurring": true,
+   "date": "2026-12-03",
+   "when": "Thursdays 6 p.m. through Apr 29",
    "start": "18:00",
    "end": "20:00"
   },
@@ -2376,7 +3307,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24374503",
    "start": "18:30",
-   "end": "20:30"
+   "end": "20:30",
+   "recurring": false
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-12-03",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
   },
   {
    "date": "2026-12-03",
@@ -2390,7 +3337,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24369810",
    "start": "20:00",
-   "end": "23:00"
+   "end": "23:00",
+   "recurring": false
   },
   {
    "date": "2026-12-03",
@@ -2402,7 +3350,8 @@
    "when": "Opens Thu Dec 3",
    "venue": "Cascades Theatrical Company",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24366282"
+   "link": "https://community.bendsource.com/bend/Event?oid=24366282",
+   "recurring": false
   },
   {
    "date": "2026-12-03",
@@ -2413,7 +3362,8 @@
    "when": "Thu",
    "venue": "Work-Collective Midway",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/flannel-friends-tickets-2003821875170"
+   "link": "https://www.eventbrite.com/e/flannel-friends-tickets-2003821875170",
+   "recurring": false
   },
   {
    "date": "2026-12-04",
@@ -2426,7 +3376,8 @@
    "source": "Eventbrite",
    "link": "https://www.eventbrite.com/e/trauma-focused-cognitive-behavioral-therapy-tf-cbt-introductory-training-tickets-2003978462527",
    "start": "08:30",
-   "end": "10:30"
+   "end": "10:30",
+   "recurring": false
   },
   {
    "date": "2026-12-04",
@@ -2440,7 +3391,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24277314",
    "start": "09:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-12-04",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-12-04",
@@ -2454,7 +3421,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17704980",
    "start": "10:00",
-   "end": "11:30"
+   "end": "11:30",
+   "recurring": false
   },
   {
    "date": "2026-12-04",
@@ -2468,7 +3436,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24050884",
    "start": "16:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-04",
@@ -2482,7 +3451,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24385776",
    "start": "16:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-12-04",
@@ -2496,7 +3466,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24363650",
    "start": "17:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2026-12-04",
@@ -2510,7 +3481,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24300510",
    "start": "17:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": true
   },
   {
    "date": "2026-12-04",
@@ -2524,7 +3496,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24358229",
    "start": "17:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-04",
@@ -2538,7 +3511,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24365163",
    "start": "17:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-12-04",
@@ -2552,7 +3526,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381943",
    "start": "17:15",
-   "end": "19:15"
+   "end": "19:15",
+   "recurring": false
   },
   {
    "date": "2026-12-04",
@@ -2566,7 +3541,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24387347",
    "start": "17:30",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": true
   },
   {
    "date": "2026-12-04",
@@ -2580,7 +3556,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24096840",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-04",
@@ -2594,7 +3571,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24287662",
    "start": "19:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-12-04",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
   },
   {
    "date": "2026-12-04",
@@ -2606,7 +3599,8 @@
    "when": "Fri-Sat",
    "venue": "The Foundry Church",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24281539"
+   "link": "https://community.bendsource.com/bend/Event?oid=24281539",
+   "recurring": false
   },
   {
    "date": "2026-12-04",
@@ -2617,7 +3611,8 @@
    "when": "Fri",
    "venue": "Midtown Ballroom",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/family-mystic-tickets-2000084690149"
+   "link": "https://www.eventbrite.com/e/family-mystic-tickets-2000084690149",
+   "recurring": false
   },
   {
    "date": "2026-12-04",
@@ -2628,7 +3623,8 @@
    "when": "Fri-Sun",
    "venue": "Skyliners Lodge area",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24370050"
+   "link": "https://community.bendsource.com/bend/Event?oid=24370050",
+   "recurring": false
   },
   {
    "date": "2026-12-04",
@@ -2640,7 +3636,8 @@
    "when": "Dec 4-12",
    "venue": "Summit High School",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24359357"
+   "link": "https://community.bendsource.com/bend/Event?oid=24359357",
+   "recurring": false
   },
   {
    "date": "2026-12-04",
@@ -2652,7 +3649,8 @@
    "when": "Fri-Sun",
    "venue": "Mountain View High School",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24360324"
+   "link": "https://community.bendsource.com/bend/Event?oid=24360324",
+   "recurring": false
   },
   {
    "date": "2026-12-05",
@@ -2666,7 +3664,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24359123",
    "start": "10:00",
-   "end": "12:00"
+   "end": "12:00",
+   "recurring": false
   },
   {
    "date": "2026-12-05",
@@ -2680,7 +3679,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24374804",
    "start": "10:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-12-05",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-12-05",
@@ -2694,7 +3709,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24383304",
    "start": "10:00",
-   "end": "14:00"
+   "end": "14:00",
+   "recurring": false
   },
   {
    "date": "2026-12-05",
@@ -2707,7 +3723,8 @@
    "source": "Meetup",
    "link": "https://www.meetup.com/cota-crew-leaders/events/317460446/",
    "start": "11:00",
-   "end": "13:00"
+   "end": "13:00",
+   "recurring": false
   },
   {
    "date": "2026-12-05",
@@ -2721,7 +3738,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17644343",
    "start": "11:00",
-   "end": "13:00"
+   "end": "13:00",
+   "recurring": false
   },
   {
    "date": "2026-12-05",
@@ -2734,7 +3752,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24364592",
    "start": "13:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": false
   },
   {
    "date": "2026-12-05",
@@ -2748,7 +3767,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24382453",
    "start": "16:30",
-   "end": "22:30"
+   "end": "22:30",
+   "recurring": false
   },
   {
    "date": "2026-12-05",
@@ -2762,7 +3782,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24355057",
    "start": "17:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-05",
@@ -2776,7 +3797,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17535294",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-05",
@@ -2790,7 +3812,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24386711",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-05",
@@ -2804,7 +3827,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24314308",
    "start": "19:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2026-12-05",
@@ -2818,7 +3842,38 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381857",
    "start": "19:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
+  },
+  {
+   "title": "Bend Adult Volleyball",
+   "category": "Sport",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "price": "$10",
+   "venue": "Bend Hoops",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=17968092",
+   "recurring": true,
+   "date": "2026-12-05",
+   "when": "Sat 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-12-05",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
   },
   {
    "date": "2026-12-05",
@@ -2830,7 +3885,8 @@
    "when": "First Sat",
    "venue": "The Commons Cafe & Taproom",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=23641614"
+   "link": "https://community.bendsource.com/bend/Event?oid=23641614",
+   "recurring": true
   },
   {
    "date": "2026-12-05",
@@ -2841,7 +3897,8 @@
    "when": "Sat",
    "venue": "Works Real Estate",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/christmas-crafts-wnew-friends-bend-tickets-2004794458192"
+   "link": "https://www.eventbrite.com/e/christmas-crafts-wnew-friends-bend-tickets-2004794458192",
+   "recurring": false
   },
   {
    "date": "2026-12-05",
@@ -2852,7 +3909,8 @@
    "when": "Sat",
    "venue": "Metolius Preserve",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/tree-hunt-metolius-preserve-registration-2004263324557"
+   "link": "https://www.eventbrite.com/e/tree-hunt-metolius-preserve-registration-2004263324557",
+   "recurring": false
   },
   {
    "date": "2026-12-06",
@@ -2866,7 +3924,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24388979",
    "start": "09:00",
-   "end": "12:00"
+   "end": "12:00",
+   "recurring": false
   },
   {
    "date": "2026-12-06",
@@ -2880,7 +3939,23 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17727516",
    "start": "10:00",
-   "end": "12:00"
+   "end": "12:00",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-12-06",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-12-06",
@@ -2894,7 +3969,8 @@
    "source": "Meetup",
    "link": "https://www.meetup.com/new-friends-bend/events/317450144/",
    "start": "11:00",
-   "end": "13:00"
+   "end": "13:00",
+   "recurring": false
   },
   {
    "date": "2026-12-06",
@@ -2908,7 +3984,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24353827",
    "start": "11:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": false
   },
   {
    "date": "2026-12-06",
@@ -2921,7 +3998,8 @@
    "source": "Eventbrite",
    "link": "https://www.eventbrite.com/e/apres-ski-bingo-juniper-elementary-pto-tickets-2004461146247",
    "start": "14:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": false
   },
   {
    "date": "2026-12-06",
@@ -2935,7 +4013,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381945",
    "start": "15:30",
-   "end": "17:30"
+   "end": "17:30",
+   "recurring": false
   },
   {
    "date": "2026-12-06",
@@ -2949,7 +4028,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24362837",
    "start": "18:00",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
+  },
+  {
+   "title": "Bend Adult Volleyball",
+   "category": "Sport",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "price": "$10",
+   "venue": "Bend Hoops",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=17968092",
+   "recurring": true,
+   "date": "2026-12-06",
+   "when": "Sun 7-9 p.m.",
+   "start": "19:00",
+   "end": "21:00"
   },
   {
    "date": "2026-12-06",
@@ -2963,7 +4058,38 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381861",
    "start": "19:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-12-06",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-12-07",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-12-07",
@@ -2977,7 +4103,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24378172",
    "start": "12:00",
-   "end": "14:00"
+   "end": "14:00",
+   "recurring": false
   },
   {
    "date": "2026-12-07",
@@ -2991,7 +4118,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24351895",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-07",
@@ -3005,7 +4133,8 @@
    "source": "High Desert Museum",
    "link": "https://www.highdesertmuseum.org/whats-on/events/",
    "start": "19:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-07",
@@ -3016,7 +4145,8 @@
    "when": "Mon",
    "venue": "Kiln",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/how-bend-businesses-are-using-ai-today-tickets-2004399649308"
+   "link": "https://www.eventbrite.com/e/how-bend-businesses-are-using-ai-today-tickets-2004399649308",
+   "recurring": false
   },
   {
    "date": "2026-12-07",
@@ -3027,7 +4157,8 @@
    "when": "Mon",
    "venue": "COCC",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/nfa-command-and-control-of-incident-operations-tickets-1993939858793"
+   "link": "https://www.eventbrite.com/e/nfa-command-and-control-of-incident-operations-tickets-1993939858793",
+   "recurring": false
   },
   {
    "date": "2026-12-07",
@@ -3038,7 +4169,8 @@
    "when": "Mon",
    "venue": "Round Butte Inn",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/orhun-timur-live-at-round-butte-inn-tickets-2003432708161"
+   "link": "https://www.eventbrite.com/e/orhun-timur-live-at-round-butte-inn-tickets-2003432708161",
+   "recurring": false
   },
   {
    "date": "2026-12-08",
@@ -3052,7 +4184,8 @@
    "source": "OSU-Cascades (Bend Beavs Central)",
    "link": "https://bendbeavscentral.osucascades.edu/rsvp?id=2136978",
    "start": "09:00",
-   "end": "11:00"
+   "end": "11:00",
+   "recurring": false
   },
   {
    "date": "2026-12-08",
@@ -3066,7 +4199,37 @@
    "source": "Bend Chamber",
    "link": "https://www.bendchamber.org/event/membership-101-maximizing-your-membership-december-8",
    "start": "10:00",
-   "end": "11:00"
+   "end": "11:00",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-12-08",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  {
+   "title": "Soak & Sip at Flux",
+   "category": "Wellness",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "venue": "Flux Thermal Lounge",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24161378",
+   "recurring": true,
+   "date": "2026-12-08",
+   "when": "Tue-Thu 4-9 p.m.",
+   "start": "16:00",
+   "end": "21:00"
   },
   {
    "date": "2026-12-08",
@@ -3080,7 +4243,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24248994",
    "start": "17:00",
-   "end": "18:00"
+   "end": "18:00",
+   "recurring": false
   },
   {
    "date": "2026-12-08",
@@ -3094,7 +4258,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381947",
    "start": "17:30",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-12-08",
@@ -3108,7 +4273,8 @@
    "source": "High Desert Museum",
    "link": "https://www.highdesertmuseum.org/whats-on/events/",
    "start": "18:00",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-12-08",
@@ -3122,7 +4288,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24374871",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": true
   },
   {
    "date": "2026-12-08",
@@ -3136,7 +4303,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24376563",
    "start": "18:15",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-12-08",
@@ -3150,7 +4318,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24317199",
    "start": "18:30",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-12-08",
@@ -3161,7 +4330,8 @@
    "when": "Tue",
    "venue": "Silver Moon Brewing",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/magic-mustache-club-silver-moon-brewing-tickets-2004260219269"
+   "link": "https://www.eventbrite.com/e/magic-mustache-club-silver-moon-brewing-tickets-2004260219269",
+   "recurring": false
   },
   {
    "date": "2026-12-08",
@@ -3173,7 +4343,23 @@
    "when": "Tue",
    "venue": "Arome",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/dinner-party-good-lookin-cookin-redmond-cookbook-club-tickets-2005042754854"
+   "link": "https://www.eventbrite.com/e/dinner-party-good-lookin-cookin-redmond-cookbook-club-tickets-2005042754854",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-12-09",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-12-09",
@@ -3187,7 +4373,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17644849",
    "start": "13:45",
-   "end": "15:45"
+   "end": "15:45",
+   "recurring": false
   },
   {
    "date": "2026-12-09",
@@ -3200,7 +4387,22 @@
    "source": "Meetup",
    "link": "https://www.meetup.com/bend-bella-cyclists-meetup/events/317341392/",
    "start": "16:00",
-   "end": "18:00"
+   "end": "18:00",
+   "recurring": false
+  },
+  {
+   "title": "Soak & Sip at Flux",
+   "category": "Wellness",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "venue": "Flux Thermal Lounge",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24161378",
+   "recurring": true,
+   "date": "2026-12-09",
+   "when": "Tue-Thu 4-9 p.m.",
+   "start": "16:00",
+   "end": "21:00"
   },
   {
    "date": "2026-12-09",
@@ -3214,7 +4416,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17437137",
    "start": "17:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-12-09",
@@ -3228,7 +4431,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381951",
    "start": "17:15",
-   "end": "19:15"
+   "end": "19:15",
+   "recurring": false
+  },
+  {
+   "title": "Bend Chess and Go Club",
+   "category": "Games",
+   "group": "Social & Networking",
+   "town": "Bend",
+   "price": "Free",
+   "venue": "Crux Fermentation Project",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=22478213",
+   "recurring": true,
+   "date": "2026-12-09",
+   "when": "Wednesdays 6-9 p.m.",
+   "start": "18:00",
+   "end": "21:00"
   },
   {
    "date": "2026-12-09",
@@ -3242,7 +4461,38 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24380111",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
+  },
+  {
+   "title": "Scrabble Club",
+   "category": "Games",
+   "group": "Social & Networking",
+   "town": "Bend",
+   "price": "Free",
+   "venue": "Market of Choice",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=22848981",
+   "recurring": true,
+   "date": "2026-12-09",
+   "when": "Wednesdays 6-8:30 p.m.",
+   "start": "18:00",
+   "end": "20:30"
+  },
+  {
+   "title": "Argentine Tango Class & Practice",
+   "category": "Dance",
+   "group": "Film & Stage",
+   "town": "Bend",
+   "price": "$5-$10",
+   "venue": "Sons of Norway Hall",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24330436",
+   "recurring": true,
+   "date": "2026-12-09",
+   "when": "Wednesdays 6:30-9:30 p.m.",
+   "start": "18:30",
+   "end": "21:30"
   },
   {
    "date": "2026-12-09",
@@ -3256,7 +4506,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17683114",
    "start": "18:45",
-   "end": "19:45"
+   "end": "19:45",
+   "recurring": false
   },
   {
    "date": "2026-12-09",
@@ -3270,7 +4521,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24312643",
    "start": "19:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-12-09",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
   },
   {
    "date": "2026-12-09",
@@ -3283,7 +4550,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24335784",
    "start": "20:30",
-   "end": "22:30"
+   "end": "22:30",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-12-10",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-12-10",
@@ -3297,7 +4580,22 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17388737",
    "start": "15:00",
-   "end": "17:00"
+   "end": "17:00",
+   "recurring": false
+  },
+  {
+   "title": "Soak & Sip at Flux",
+   "category": "Wellness",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "venue": "Flux Thermal Lounge",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24161378",
+   "recurring": true,
+   "date": "2026-12-10",
+   "when": "Tue-Thu 4-9 p.m.",
+   "start": "16:00",
+   "end": "21:00"
   },
   {
    "date": "2026-12-10",
@@ -3311,7 +4609,8 @@
    "source": "High Desert Museum",
    "link": "https://www.highdesertmuseum.org/whats-on/events/",
    "start": "16:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-12-10",
@@ -3325,7 +4624,8 @@
    "source": "Bend Chamber",
    "link": "https://www.bendchamber.org/event/biz-bevs-kernutt-stokes",
    "start": "16:30",
-   "end": "18:00"
+   "end": "18:00",
+   "recurring": false
   },
   {
    "date": "2026-12-10",
@@ -3339,7 +4639,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24378101",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": true
   },
   {
    "date": "2026-12-10",
@@ -3353,7 +4654,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24105490",
    "start": "18:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": true
   },
   {
    "date": "2026-12-10",
@@ -3366,6 +4668,22 @@
    "venue": "The Lot",
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24330874",
+   "start": "18:00",
+   "end": "20:00",
+   "recurring": false
+  },
+  {
+   "title": "Suttle Lodge Fireside Concert Series",
+   "category": "Live Music",
+   "group": "Music",
+   "town": "Sisters",
+   "price": "$12.60",
+   "venue": "The Suttle Lodge",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24368464",
+   "recurring": true,
+   "date": "2026-12-10",
+   "when": "Thursdays 6 p.m. through Apr 29",
    "start": "18:00",
    "end": "20:00"
   },
@@ -3381,6 +4699,22 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24173233",
    "start": "19:30",
+   "end": "21:30",
+   "recurring": false
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-12-10",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
    "end": "21:30"
   },
   {
@@ -3395,7 +4729,23 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17226242",
    "start": "10:00",
-   "end": "12:00"
+   "end": "12:00",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-12-11",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-12-11",
@@ -3409,7 +4759,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24388687",
    "start": "18:00",
-   "end": "20:30"
+   "end": "20:30",
+   "recurring": false
   },
   {
    "date": "2026-12-11",
@@ -3423,7 +4774,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24378467",
    "start": "19:00",
-   "end": "23:30"
+   "end": "23:30",
+   "recurring": false
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-12-11",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
   },
   {
    "date": "2026-12-11",
@@ -3437,7 +4804,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381865",
    "start": "20:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
   },
   {
    "date": "2026-12-11",
@@ -3449,7 +4817,8 @@
    "when": "Fri-Sat",
    "venue": "Powell Butte Community Center",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24365240"
+   "link": "https://community.bendsource.com/bend/Event?oid=24365240",
+   "recurring": false
   },
   {
    "date": "2026-12-11",
@@ -3460,7 +4829,8 @@
    "when": "Fri",
    "venue": "Open Space",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/jingle-all-night-a-womens-christmas-pajama-party-tickets-2004743747515"
+   "link": "https://www.eventbrite.com/e/jingle-all-night-a-womens-christmas-pajama-party-tickets-2004743747515",
+   "recurring": false
   },
   {
    "date": "2026-12-11",
@@ -3472,7 +4842,8 @@
    "when": "Fri (+Jan 15)",
    "venue": "The Open Arts Center",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24299689"
+   "link": "https://community.bendsource.com/bend/Event?oid=24299689",
+   "recurring": false
   },
   {
    "date": "2026-12-12",
@@ -3486,7 +4857,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24390384",
    "start": "08:00",
-   "end": "15:00"
+   "end": "15:00",
+   "recurring": false
   },
   {
    "date": "2026-12-12",
@@ -3500,7 +4872,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24369889",
    "start": "10:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2026-12-12",
@@ -3514,7 +4887,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381855",
    "start": "10:00",
-   "end": "13:00"
+   "end": "13:00",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-12-12",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-12-12",
@@ -3528,7 +4917,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24388554",
    "start": "11:00",
-   "end": "14:00"
+   "end": "14:00",
+   "recurring": false
   },
   {
    "date": "2026-12-12",
@@ -3542,7 +4932,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17789223",
    "start": "12:00",
-   "end": "14:00"
+   "end": "14:00",
+   "recurring": false
   },
   {
    "date": "2026-12-12",
@@ -3556,7 +4947,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381953",
    "start": "13:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": true
   },
   {
    "date": "2026-12-12",
@@ -3570,7 +4962,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17169885",
    "start": "14:00",
-   "end": "15:00"
+   "end": "15:00",
+   "recurring": false
   },
   {
    "date": "2026-12-12",
@@ -3584,7 +4977,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17169963",
    "start": "14:00",
-   "end": "15:00"
+   "end": "15:00",
+   "recurring": false
   },
   {
    "date": "2026-12-12",
@@ -3598,7 +4992,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24357117",
    "start": "17:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-12",
@@ -3611,7 +5006,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24372963",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-12",
@@ -3625,7 +5021,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=23951277",
    "start": "18:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": true
   },
   {
    "date": "2026-12-12",
@@ -3639,7 +5036,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24378012",
    "start": "19:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2026-12-12",
@@ -3653,6 +5051,37 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24268896",
    "start": "19:00",
+   "end": "21:30",
+   "recurring": false
+  },
+  {
+   "title": "Bend Adult Volleyball",
+   "category": "Sport",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "price": "$10",
+   "venue": "Bend Hoops",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=17968092",
+   "recurring": true,
+   "date": "2026-12-12",
+   "when": "Sat 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-12-12",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
    "end": "21:30"
   },
   {
@@ -3667,7 +5096,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24312441",
    "start": "20:00",
-   "end": "23:00"
+   "end": "23:00",
+   "recurring": false
   },
   {
    "date": "2026-12-12",
@@ -3679,7 +5109,8 @@
    "when": "Sat-Sun 9-5",
    "venue": "The Old Iron Works",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24345518"
+   "link": "https://community.bendsource.com/bend/Event?oid=24345518",
+   "recurring": false
   },
   {
    "date": "2026-12-12",
@@ -3690,7 +5121,23 @@
    "when": "Sat",
    "venue": "In Balance Bodywork",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/reiki-level-2-attunement-certification-in-person-tickets-2004629266098"
+   "link": "https://www.eventbrite.com/e/reiki-level-2-attunement-certification-in-person-tickets-2004629266098",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-12-13",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-12-13",
@@ -3704,7 +5151,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=23878183",
    "start": "14:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": true
   },
   {
    "date": "2026-12-13",
@@ -3718,7 +5166,38 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=22984346",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": true
+  },
+  {
+   "title": "Bend Adult Volleyball",
+   "category": "Sport",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "price": "$10",
+   "venue": "Bend Hoops",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=17968092",
+   "recurring": true,
+   "date": "2026-12-13",
+   "when": "Sun 7-9 p.m.",
+   "start": "19:00",
+   "end": "21:00"
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-12-13",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
   },
   {
    "date": "2026-12-13",
@@ -3731,7 +5210,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24370336",
    "start": "20:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
   },
   {
    "date": "2026-12-13",
@@ -3742,7 +5222,23 @@
    "when": "Sun",
    "venue": "LDS Church",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/bend-christmas-music-devotional-tickets-2003905742018"
+   "link": "https://www.eventbrite.com/e/bend-christmas-music-devotional-tickets-2003905742018",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-12-14",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-12-14",
@@ -3754,7 +5250,8 @@
    "when": "Dec 14-Jan 1",
    "venue": "SCP Redmond Hotel",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24323691"
+   "link": "https://community.bendsource.com/bend/Event?oid=24323691",
+   "recurring": false
   },
   {
    "date": "2026-12-14",
@@ -3765,7 +5262,23 @@
    "when": "Mon",
    "venue": "Stoller Wine Bar",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/121426-speed-dating-at-stoller-bend-ages-25ish-49ish-tickets-2004260401815"
+   "link": "https://www.eventbrite.com/e/121426-speed-dating-at-stoller-bend-ages-25ish-49ish-tickets-2004260401815",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-12-15",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
   },
   {
    "date": "2026-12-15",
@@ -3778,7 +5291,22 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24366568",
    "start": "15:00",
-   "end": "18:00"
+   "end": "18:00",
+   "recurring": false
+  },
+  {
+   "title": "Soak & Sip at Flux",
+   "category": "Wellness",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "venue": "Flux Thermal Lounge",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24161378",
+   "recurring": true,
+   "date": "2026-12-15",
+   "when": "Tue-Thu 4-9 p.m.",
+   "start": "16:00",
+   "end": "21:00"
   },
   {
    "date": "2026-12-15",
@@ -3792,7 +5320,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381955",
    "start": "17:30",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-12-15",
@@ -3806,7 +5335,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/16810980",
    "start": "17:30",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-12-15",
@@ -3820,7 +5350,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=22752160",
    "start": "18:30",
-   "end": "20:30"
+   "end": "20:30",
+   "recurring": true
   },
   {
    "date": "2026-12-15",
@@ -3834,7 +5365,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24368245",
    "start": "18:30",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-12-15",
@@ -3848,7 +5380,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381867",
    "start": "18:30",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-12-15",
@@ -3862,7 +5395,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24312443",
    "start": "19:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2026-12-15",
@@ -3873,7 +5407,37 @@
    "when": "Tue",
    "venue": "Kiln",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/makers-market-tickets-2004505274235"
+   "link": "https://www.eventbrite.com/e/makers-market-tickets-2004505274235",
+   "recurring": false
+  },
+  {
+   "title": "Volunteer: Sunriver Nature Center & Observatory",
+   "category": "Volunteer / Nature",
+   "group": "Outdoors & Snow",
+   "town": "Sunriver",
+   "price": "Free",
+   "venue": "Sunriver Nature Center",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24325512",
+   "recurring": true,
+   "date": "2026-12-16",
+   "when": "Daily 10 a.m.-3 p.m.",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  {
+   "title": "Soak & Sip at Flux",
+   "category": "Wellness",
+   "group": "Wellness & Fitness",
+   "town": "Bend",
+   "venue": "Flux Thermal Lounge",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24161378",
+   "recurring": true,
+   "date": "2026-12-16",
+   "when": "Tue-Thu 4-9 p.m.",
+   "start": "16:00",
+   "end": "21:00"
   },
   {
    "date": "2026-12-16",
@@ -3887,7 +5451,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24383756",
    "start": "17:30",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
+  },
+  {
+   "title": "Bend Chess and Go Club",
+   "category": "Games",
+   "group": "Social & Networking",
+   "town": "Bend",
+   "price": "Free",
+   "venue": "Crux Fermentation Project",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=22478213",
+   "recurring": true,
+   "date": "2026-12-16",
+   "when": "Wednesdays 6-9 p.m.",
+   "start": "18:00",
+   "end": "21:00"
   },
   {
    "date": "2026-12-16",
@@ -3901,7 +5481,23 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24386793",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
+  },
+  {
+   "title": "Scrabble Club",
+   "category": "Games",
+   "group": "Social & Networking",
+   "town": "Bend",
+   "price": "Free",
+   "venue": "Market of Choice",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=22848981",
+   "recurring": true,
+   "date": "2026-12-16",
+   "when": "Wednesdays 6-8:30 p.m.",
+   "start": "18:00",
+   "end": "20:30"
   },
   {
    "date": "2026-12-16",
@@ -3915,7 +5511,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17437097",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-16",
@@ -3929,7 +5526,38 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24363144",
    "start": "18:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
+  },
+  {
+   "title": "Argentine Tango Class & Practice",
+   "category": "Dance",
+   "group": "Film & Stage",
+   "town": "Bend",
+   "price": "$5-$10",
+   "venue": "Sons of Norway Hall",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=24330436",
+   "recurring": true,
+   "date": "2026-12-16",
+   "when": "Wednesdays 6:30-9:30 p.m.",
+   "start": "18:30",
+   "end": "21:30"
+  },
+  {
+   "title": "Bend Ghost Tours",
+   "category": "Tour / History",
+   "group": "Talks & Learning",
+   "town": "Bend",
+   "price": "$25",
+   "venue": "Downtown Bend",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=15414375",
+   "recurring": true,
+   "date": "2026-12-16",
+   "when": "Wed-Sun 7:30 p.m.",
+   "start": "19:30",
+   "end": "21:30"
   },
   {
    "date": "2026-12-16",
@@ -3940,7 +5568,8 @@
    "when": "Wed",
    "venue": "The Winery at Manzanita",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/alpine-aura-paint-and-sip-tickets-2004690215399"
+   "link": "https://www.eventbrite.com/e/alpine-aura-paint-and-sip-tickets-2004690215399",
+   "recurring": false
   },
   {
    "date": "2026-12-17",
@@ -3954,7 +5583,8 @@
    "source": "High Desert Museum",
    "link": "https://www.highdesertmuseum.org/whats-on/events/",
    "start": "16:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-12-17",
@@ -3968,7 +5598,8 @@
    "source": "Bend Chamber",
    "link": "https://www.bendchamber.org/event/bend-et-holiday-social-webfoot-garage-at-silver-moon-brewing",
    "start": "17:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-12-17",
@@ -3982,7 +5613,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24385060",
    "start": "17:30",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-12-17",
@@ -3996,7 +5628,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=23786961",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-17",
@@ -4010,7 +5643,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/16655057",
    "start": "18:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": true
   },
   {
    "date": "2026-12-17",
@@ -4024,7 +5658,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24386565",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-17",
@@ -4038,7 +5673,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381936",
    "start": "20:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
   },
   {
    "date": "2026-12-17",
@@ -4049,7 +5685,8 @@
    "when": "Thu",
    "venue": "Works Real Estate",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/mingle-all-the-way-christmas-gathering-gift-exchange-wnew-friends-bend-tickets-2004881262827"
+   "link": "https://www.eventbrite.com/e/mingle-all-the-way-christmas-gathering-gift-exchange-wnew-friends-bend-tickets-2004881262827",
+   "recurring": false
   },
   {
    "date": "2026-12-18",
@@ -4063,7 +5700,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=23968174",
    "start": "10:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-12-18",
@@ -4077,7 +5715,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24357119",
    "start": "17:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-18",
@@ -4091,7 +5730,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24337202",
    "start": "17:30",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-12-18",
@@ -4105,7 +5745,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24173224",
    "start": "19:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2026-12-18",
@@ -4116,7 +5757,8 @@
    "when": "Fri",
    "venue": "Silver Moon Brewing",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/blacklight-bingo-18-late-night-show-tickets-2003182593060"
+   "link": "https://www.eventbrite.com/e/blacklight-bingo-18-late-night-show-tickets-2003182593060",
+   "recurring": false
   },
   {
    "date": "2026-12-18",
@@ -4128,7 +5770,8 @@
    "when": "Dec 18-20",
    "venue": "Mt. Bachelor",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24381614"
+   "link": "https://community.bendsource.com/bend/Event?oid=24381614",
+   "recurring": false
   },
   {
    "date": "2026-12-19",
@@ -4142,7 +5785,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24385062",
    "start": "10:00",
-   "end": "12:00"
+   "end": "12:00",
+   "recurring": false
   },
   {
    "date": "2026-12-19",
@@ -4156,7 +5800,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17438547",
    "start": "14:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": false
   },
   {
    "date": "2026-12-19",
@@ -4170,7 +5815,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24357121",
    "start": "17:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-19",
@@ -4184,7 +5830,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24378170",
    "start": "18:00",
-   "end": "22:00"
+   "end": "22:00",
+   "recurring": false
   },
   {
    "date": "2026-12-19",
@@ -4198,7 +5845,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24104179",
    "start": "20:00",
-   "end": "23:00"
+   "end": "23:00",
+   "recurring": false
   },
   {
    "date": "2026-12-19",
@@ -4210,7 +5858,8 @@
    "when": "Sat evening",
    "venue": "The Blacksmith Public House",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24355200"
+   "link": "https://community.bendsource.com/bend/Event?oid=24355200",
+   "recurring": false
   },
   {
    "date": "2026-12-19",
@@ -4221,7 +5870,8 @@
    "when": "Sat",
    "venue": "Hanai",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/winter-solstice-sacred-sound-journey-tickets-1976663491714"
+   "link": "https://www.eventbrite.com/e/winter-solstice-sacred-sound-journey-tickets-1976663491714",
+   "recurring": false
   },
   {
    "date": "2026-12-20",
@@ -4234,7 +5884,8 @@
    "source": "Eventbrite",
    "link": "https://www.eventbrite.com/e/moonlight-ski-concert-piano-at-meissner-tickets-1998986297828",
    "start": "17:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2026-12-20",
@@ -4248,7 +5899,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24388332",
    "start": "19:00",
-   "end": "20:15"
+   "end": "20:15",
+   "recurring": false
   },
   {
    "date": "2026-12-20",
@@ -4259,7 +5911,8 @@
    "when": "Sun",
    "venue": "Historic Skyliner Lodge",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/a-solstice-celebration-tickets-2004976199786"
+   "link": "https://www.eventbrite.com/e/a-solstice-celebration-tickets-2004976199786",
+   "recurring": false
   },
   {
    "date": "2026-12-21",
@@ -4273,7 +5926,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17799734",
    "start": "17:30",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-12-21",
@@ -4287,7 +5941,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=23999877",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-22",
@@ -4298,7 +5953,8 @@
    "when": "Tue",
    "venue": "Hanai",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/restore-deeply-a-christmas-multisensory-sound-bath-tickets-2004682606641"
+   "link": "https://www.eventbrite.com/e/restore-deeply-a-christmas-multisensory-sound-bath-tickets-2004682606641",
+   "recurring": false
   },
   {
    "date": "2026-12-26",
@@ -4309,7 +5965,8 @@
    "when": "Sat",
    "venue": "Upp Liquids",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/la-bon-burlesques-ho-liday-spectacular-tickets-2004400957220"
+   "link": "https://www.eventbrite.com/e/la-bon-burlesques-ho-liday-spectacular-tickets-2004400957220",
+   "recurring": false
   },
   {
    "date": "2026-12-27",
@@ -4322,7 +5979,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24375416",
    "start": "08:00",
-   "end": "15:00"
+   "end": "15:00",
+   "recurring": false
   },
   {
    "date": "2026-12-27",
@@ -4336,7 +5994,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24385140",
    "start": "13:00",
-   "end": "17:00"
+   "end": "17:00",
+   "recurring": false
   },
   {
    "date": "2026-12-28",
@@ -4350,7 +6009,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17731618",
    "start": "15:00",
-   "end": "17:00"
+   "end": "17:00",
+   "recurring": false
   },
   {
    "date": "2026-12-28",
@@ -4364,7 +6024,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24385146",
    "start": "17:30",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2026-12-29",
@@ -4378,7 +6039,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24378090",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": true
   },
   {
    "date": "2026-12-30",
@@ -4391,7 +6053,8 @@
    "source": "Eventbrite",
    "link": "https://www.eventbrite.com/e/full-moon-sound-journeys-tickets-2000653716121",
    "start": "18:30",
-   "end": "20:30"
+   "end": "20:30",
+   "recurring": false
   },
   {
    "date": "2026-12-31",
@@ -4405,7 +6068,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24366487",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2026-12-31",
@@ -4419,7 +6083,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24369615",
    "start": "21:00",
-   "end": "23:45"
+   "end": "23:45",
+   "recurring": false
   },
   {
    "date": "2026-12-31",
@@ -4434,7 +6099,8 @@
    "link": "https://community.bendsource.com/bend/Event?oid=24381941",
    "start": "21:00",
    "end": "02:00",
-   "endsNextDay": true
+   "endsNextDay": true,
+   "recurring": false
   },
   {
    "date": "2026-12-31",
@@ -4445,7 +6111,8 @@
    "when": "Thu",
    "venue": "Midtown Ballroom",
    "source": "Source Weekly calendar",
-   "link": "https://community.bendsource.com/bend/Event?oid=24387952"
+   "link": "https://community.bendsource.com/bend/Event?oid=24387952",
+   "recurring": false
   },
   {
    "date": "2027-01-03",
@@ -4459,7 +6126,8 @@
    "source": "High Desert Museum",
    "link": "https://www.highdesertmuseum.org/whats-on/events/",
    "start": "10:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": false
   },
   {
    "date": "2027-01-04",
@@ -4473,7 +6141,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17760990",
    "start": "11:30",
-   "end": "13:30"
+   "end": "13:30",
+   "recurring": true
   },
   {
    "date": "2027-01-04",
@@ -4487,7 +6156,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24239929",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": true
   },
   {
    "date": "2027-01-04",
@@ -4501,7 +6171,8 @@
    "source": "High Desert Museum",
    "link": "https://www.highdesertmuseum.org/whats-on/events/",
    "start": "19:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2027-01-05",
@@ -4515,7 +6186,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17503375",
    "start": "12:00",
-   "end": "14:00"
+   "end": "14:00",
+   "recurring": false
   },
   {
    "date": "2027-01-05",
@@ -4529,7 +6201,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17800723",
    "start": "18:30",
-   "end": "20:30"
+   "end": "20:30",
+   "recurring": false
   },
   {
    "date": "2027-01-07",
@@ -4543,7 +6216,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24366562",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2027-01-08",
@@ -4557,7 +6231,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17727494",
    "start": "14:00",
-   "end": "16:00"
+   "end": "16:00",
+   "recurring": false
   },
   {
    "date": "2027-01-08",
@@ -4570,7 +6245,8 @@
    "source": "Eventbrite",
    "link": "https://www.eventbrite.com/e/next-stop-comedy-at-bridge-99-brewery-bend-or-tickets-1998495266139",
    "start": "19:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2027-01-08",
@@ -4581,7 +6257,8 @@
    "when": "Jan 8+",
    "venue": "Mount Hood Kiwanis Camp",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/northwest-wilderness-medicine-conference-2027-tickets-2003310619992"
+   "link": "https://www.eventbrite.com/e/northwest-wilderness-medicine-conference-2027-tickets-2003310619992",
+   "recurring": false
   },
   {
    "date": "2027-01-09",
@@ -4595,7 +6272,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381708",
    "start": "19:30",
-   "end": "21:30"
+   "end": "21:30",
+   "recurring": false
   },
   {
    "date": "2027-01-10",
@@ -4606,7 +6284,8 @@
    "when": "Sun",
    "venue": "63016 NE 18th St",
    "source": "Eventbrite",
-   "link": "https://www.eventbrite.com/e/plate-and-palette-tickets-2003085969055"
+   "link": "https://www.eventbrite.com/e/plate-and-palette-tickets-2003085969055",
+   "recurring": false
   },
   {
    "date": "2027-01-11",
@@ -4620,7 +6299,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17686081",
    "start": "10:00",
-   "end": "12:00"
+   "end": "12:00",
+   "recurring": false
   },
   {
    "date": "2027-01-12",
@@ -4634,7 +6314,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17803001",
    "start": "13:00",
-   "end": "15:00"
+   "end": "15:00",
+   "recurring": false
   },
   {
    "date": "2027-01-12",
@@ -4648,7 +6329,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17702028",
    "start": "17:30",
-   "end": "19:30"
+   "end": "19:30",
+   "recurring": false
   },
   {
    "date": "2027-01-13",
@@ -4662,7 +6344,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17727175",
    "start": "17:00",
-   "end": "19:00"
+   "end": "19:00",
+   "recurring": false
   },
   {
    "date": "2027-01-13",
@@ -4676,7 +6359,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24332644",
    "start": "17:30",
-   "end": "18:30"
+   "end": "18:30",
+   "recurring": false
   },
   {
    "date": "2027-01-13",
@@ -4689,7 +6373,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24381447",
    "start": "18:00",
-   "end": "21:00"
+   "end": "21:00",
+   "recurring": false
   },
   {
    "date": "2027-01-13",
@@ -4701,7 +6386,8 @@
    "when": "Wed",
    "venue": "Redmond",
    "source": "EDCO",
-   "link": "https://www.edcoinfo.com/events"
+   "link": "https://www.edcoinfo.com/events",
+   "recurring": false
   },
   {
    "date": "2027-01-14",
@@ -4715,7 +6401,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17764236",
    "start": "12:00",
-   "end": "14:00"
+   "end": "14:00",
+   "recurring": false
   },
   {
    "date": "2027-01-14",
@@ -4729,7 +6416,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24366564",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2027-01-14",
@@ -4743,7 +6431,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17803524",
    "start": "18:00",
-   "end": "20:00"
+   "end": "20:00",
+   "recurring": false
   },
   {
    "date": "2027-01-14",
@@ -4756,7 +6445,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24194423",
    "start": "19:30",
-   "end": "21:30"
+   "end": "21:30",
+   "recurring": false
   },
   {
    "date": "2027-01-15",
@@ -4770,7 +6460,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17704322",
    "start": "10:00",
-   "end": "12:00"
+   "end": "12:00",
+   "recurring": false
   },
   {
    "date": "2027-01-15",
@@ -4784,7 +6475,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=23884749",
    "start": "18:30",
-   "end": "20:30"
+   "end": "20:30",
+   "recurring": false
   },
   {
    "date": "2027-01-15",
@@ -4798,7 +6490,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24173239",
    "start": "19:30",
-   "end": "21:30"
+   "end": "21:30",
+   "recurring": false
   },
   {
    "date": "2027-01-16",
@@ -4812,7 +6505,8 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24312445",
    "start": "19:30",
-   "end": "21:30"
+   "end": "21:30",
+   "recurring": false
   },
   {
    "date": "2027-01-17",
@@ -4826,7 +6520,8 @@
    "source": "Deschutes Public Library",
    "link": "https://dpl.libnet.info/event/17643595",
    "start": "16:00",
-   "end": "18:00"
+   "end": "18:00",
+   "recurring": false
   },
   {
    "date": "2027-01-17",
@@ -4840,7 +6535,46 @@
    "source": "Source Weekly calendar",
    "link": "https://community.bendsource.com/bend/Event?oid=24368247",
    "start": "16:00",
-   "end": "17:00"
+   "end": "17:00",
+   "recurring": false
+  }
+ ],
+ "ongoing": [
+  {
+   "title": "Central Oregon PubTalk (EDCO)",
+   "category": "Business / Startups",
+   "group": "Making & Arts",
+   "town": "Bend",
+   "price": "$25+",
+   "venue": "Varies",
+   "source": "EDCO",
+   "link": "https://www.edcoinfo.com/events",
+   "recurring": true,
+   "when": "Monthly, Thursday 4:30 p.m."
+  },
+  {
+   "title": "Bend Chamber Biz & Bevs",
+   "category": "Networking",
+   "group": "Social & Networking",
+   "town": "Bend",
+   "price": "$0-$10",
+   "venue": "Varies",
+   "source": "Bend Chamber",
+   "link": "https://www.bendchamber.org/events/chamber-events",
+   "recurring": true,
+   "when": "Monthly"
+  },
+  {
+   "title": "Volunteer: ONDA high desert trips",
+   "category": "Volunteer / Conservation",
+   "group": "Talks & Learning",
+   "town": "High desert",
+   "price": "Free",
+   "venue": "Various",
+   "source": "Source Weekly calendar",
+   "link": "https://community.bendsource.com/bend/Event?oid=18700133",
+   "recurring": true,
+   "when": "Ongoing"
   }
  ]
 }
