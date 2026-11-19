@@ -8,3 +8,5 @@ Public, filterable list of upcoming events in Bend and Central Oregon, served by
   `python3 build.py rows.json events.json`
 
 Updated every Monday morning by a scheduled Claude task.
+
+Saved events: visitors can tap Save on any event. Saved events, notes and reminder lead times live only in that browser (localStorage). The page shows a reminder banner before a saved event, flags saved events that moved to a new date or dropped off the list (possibly cancelled), exports all saved events to one .ics with alarms, and shares a saved list by link.

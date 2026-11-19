@@ -102,6 +102,31 @@
   @media (max-width: 560px) { .ev { grid-template-columns: 1fr; }
     .cal { grid-column: 1; grid-row: auto; flex-direction: row; } }
   .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+  .save { padding: 2px 10px; font-size: .78rem; border-radius: 999px; color: var(--accent); font-weight: 600; }
+  .save.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .ev.saved { border-left-color: var(--teal); }
+  .hdrbtns { margin-left: auto; display: flex; gap: 8px; flex-wrap: wrap; }
+  .hdrbtns .share.hdr { margin-left: 0; }
+  #savedBtn { padding: 6px 12px; font-size: .85rem; border-radius: 999px; font-weight: 600; color: var(--accent); }
+  #savedBtn.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .count { display: inline-block; min-width: 1.4em; margin-left: 5px; padding: 0 5px; border-radius: 999px;
+    background: var(--yellow); color: #3a1c12; font-size: .75rem; line-height: 1.4em; }
+  .banner { max-width: 920px; margin: 10px auto 0; padding: 0 20px; }
+  .banner > div { padding: 9px 13px; border-radius: 10px; background: var(--chip); border: 1px solid var(--yellow);
+    font-size: .9rem; cursor: pointer; }
+  .banner b { color: var(--accent); }
+  .banner .warn { margin-top: 6px; background: var(--hover); border-color: var(--accent); }
+  .stool { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin: 16px 0 6px; }
+  .stool h2 { margin: 0 auto 0 0; }
+  .sitem textarea { width: 100%; margin-top: 6px; padding: 6px 8px; font: inherit; font-size: .88rem; resize: vertical;
+    color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 7px; }
+  .sitem .opts2 { grid-column: 1; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; font-size: .85rem; color: var(--muted); margin-top: 4px; }
+  .sitem select { width: auto; padding: 3px 6px; font-size: .85rem; }
+  .flag { border-radius: 999px; padding: 2px 9px; font-size: .78rem; font-weight: 600; }
+  .flag.moved { background: var(--yellow); color: #3a1c12; }
+  .flag.gone { background: var(--accent); color: #fff; }
+  .flag.soon { background: var(--teal); color: #fff; }
+  .note2 { color: var(--muted); font-size: .85rem; margin: 6px 0 14px; }
   footer { color: var(--muted); font-size: .8rem; text-align: center; padding: 0 20px 40px; }
 </style>
 </head>
@@ -110,10 +135,14 @@
   <h1 class="vh">Stoop Events! Things to do in Central Oregon</h1>
   <picture><source srcset="logo.webp" type="image/webp"><img class="logo" src="logo.png" alt="Stoop Events!" width="1200" height="400"></picture>
   <div class="sub" id="status">Loading events…</div>
-  <button type="button" id="shareSite" class="share hdr">Share this page</button>
+  <div class="hdrbtns">
+    <button type="button" id="savedBtn" aria-pressed="false">&#9733; Saved<span class="count" id="scount" hidden></span></button>
+    <button type="button" id="shareSite" class="share hdr">Share this page</button>
+  </div>
 </header>
+<div class="banner" id="banner" hidden></div>
 
-<div class="filters"><div class="inner">
+<div class="filters" id="filters"><div class="inner">
   <input class="search" id="q" type="search" placeholder="Search events, venues, towns" aria-label="Search">
   <select id="when" aria-label="Date range">
     <option value="all">Any date</option>
@@ -136,7 +165,7 @@
 </div></div>
 
 <main id="list"></main>
-<footer>Updated weekly. Event details come from public calendars; confirm times and tickets on each event's own page.</footer>
+<footer>Updated weekly. Event details come from public calendars; confirm times and tickets on each event's own page. Saved events and reminders are kept only in this browser.</footer>
 
 <script>
 const TZ = "America/Los_Angeles";
@@ -193,30 +222,41 @@ const VTZ = ["BEGIN:VTIMEZONE", "TZID:America/Los_Angeles",
   "BEGIN:STANDARD", "TZOFFSETFROM:-0700", "TZOFFSETTO:-0800", "TZNAME:PST",
   "DTSTART:19701101T020000", "RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU", "END:STANDARD",
   "END:VTIMEZONE"];
-function icsFor(e) {
+function vevent(e, lead) {
   const t = calTimes(e);
   const stamp = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z";
   const uid = compact(e.date) + "-" + e.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 40) + "@bendtodo";
-  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//bendtodo//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH"];
-  if (!t.allDay) lines.push(...VTZ);
-  lines.push("BEGIN:VEVENT", "UID:" + uid, "DTSTAMP:" + stamp);
+  const lines = ["BEGIN:VEVENT", "UID:" + uid, "DTSTAMP:" + stamp];
   if (t.allDay) lines.push("DTSTART;VALUE=DATE:" + t.s, "DTEND;VALUE=DATE:" + t.e);
   else lines.push("DTSTART;TZID=" + TZ + ":" + t.s, "DTEND;TZID=" + TZ + ":" + t.e);
   lines.push("SUMMARY:" + icsEsc(e.title));
   if (place(e)) lines.push("LOCATION:" + icsEsc(place(e)));
   lines.push("DESCRIPTION:" + icsEsc(details(e)));
   if (safeUrl(e.link)) lines.push("URL:" + e.link);
-  lines.push("END:VEVENT", "END:VCALENDAR");
+  if (lead != null) lines.push("BEGIN:VALARM", "ACTION:DISPLAY", "DESCRIPTION:" + icsEsc(e.title),
+    "TRIGGER:" + (+lead > 0 ? "-P" + (+lead) + "D" : t.allDay ? "PT8H" : "-PT1H"), "END:VALARM");
+  lines.push("END:VEVENT");
+  return lines;
+}
+function icsFor(list, lead) {
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//bendtodo//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH"];
+  if (list.some(e => e.start)) lines.push(...VTZ);
+  list.forEach(e => lines.push(...vevent(e, typeof lead === "function" ? lead(e) : lead)));
+  lines.push("END:VCALENDAR");
   return lines.map(fold).join("\r\n") + "\r\n";
 }
-function downloadIcs(i) {
-  const e = FILTERED[i];
-  const blob = new Blob([icsFor(e)], { type: "text/calendar;charset=utf-8" });
+function saveFile(text, name) {
+  const blob = new Blob([text], { type: "text/calendar;charset=utf-8" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
-  a.download = e.title.replace(/[^\w\- ]+/g, "").trim().slice(0, 60) + ".ics";
+  a.download = name;
   document.body.appendChild(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+}
+function fileName(e) { return e.title.replace(/[^\w\- ]+/g, "").trim().slice(0, 60) + ".ics"; }
+function downloadIcs(i) {
+  const e = FILTERED[i], s = STORE.saved[evId(e)];
+  saveFile(icsFor([e], s ? s.lead : null), fileName(e));
 }
 
 /* ---------- filtering and render ---------- */
@@ -233,6 +273,8 @@ function inRange(e, mode, today) {
   return e.date <= addDays(today, parseInt(mode, 10));
 }
 function render() {
+  renderBanner();
+  if (VIEW === "saved") { renderSaved(); return; }
   const today = todayISO();
   const q = $("q").value.trim().toLowerCase();
   const mode = $("when").value, free = $("free").checked, rec = REC;
@@ -250,11 +292,14 @@ function render() {
     const link = safeUrl(e.link);
     const title = link ? '<a href="' + esc(link) + '" target="_blank" rel="noopener">' + esc(e.title) + "</a>" : esc(e.title);
     const meta = [e.when, e.venue, e.town].filter(Boolean).map(esc).join(" · ");
-    html += '<article class="ev" id="ev-' + esc(evId(e)) + '"><h3>' + title + '</h3><div class="meta">' + meta + "</div>"
+    const sv = !!STORE.saved[evId(e)];
+    html += '<article class="ev' + (sv ? " saved" : "") + '" id="ev-' + esc(evId(e)) + '"><h3>' + title + '</h3><div class="meta">' + meta + "</div>"
       + '<div class="tags">' + (e.price ? '<span class="tag">' + esc(e.price) + "</span>" : "")
       + (e.category ? '<span class="tag cat">' + esc(e.category) + "</span>" : "")
       + (e._rec ? '<span class="tag rec">Recurring</span>' : "")
-      + '<button type="button" class="share" data-share="' + i + '" aria-label="Share ' + esc(e.title) + '">Share</button>' + "</div>"
+      + '<button type="button" class="share" data-share="' + i + '" aria-label="Share ' + esc(e.title) + '">Share</button>'
+      + '<button type="button" class="save' + (sv ? " on" : "") + '" data-save="' + i + '" aria-pressed="' + sv + '" title="Save and get a reminder">'
+      + (sv ? "&#9733; Saved" : "&#9734; Save") + "</button></div>"
       + '<div class="cal"><a class="btn" href="' + esc(googleUrl(e)) + '" target="_blank" rel="noopener">+ Google / Android</a>'
       + '<button type="button" data-ics="' + i + '">+ Apple / iCal</button></div></article>';
   });
@@ -326,7 +371,9 @@ function shareEvent(i) {
     pageUrl() + "#" + evId(e));
 }
 function openFromHash() {
+  if (location.hash.startsWith("#saved=")) { importSaved(location.hash.slice(7)); return; }
   const id = decodeURIComponent(location.hash.slice(1)); if (!id) return;
+  if (VIEW === "saved") setView("all");
   const e = EVENTS.find(x => evId(x) === id); if (!e) return;
   setRec(e._rec ? "all" : REC); render();
   const el = document.getElementById("ev-" + id);
@@ -334,6 +381,149 @@ function openFromHash() {
 }
 window.addEventListener("hashchange", openFromHash);
 $("shareSite").addEventListener("click", () => share("Stoop Events!", "Things to do in Bend and Central Oregon", pageUrl()));
+
+/* ---------- saved events and reminders (this browser only) ---------- */
+const SKEY = "stoop.v1";
+const STORE = (() => { let s; try { s = JSON.parse(localStorage.getItem(SKEY)) || {}; } catch (e) { s = {}; }
+  s.saved = s.saved || {}; return s; })();
+function persist() { try { localStorage.setItem(SKEY, JSON.stringify(STORE)); } catch (e) {} updateCount(); }
+let VIEW = "all";
+const LEADS = [[0, "the same day"], [1, "1 day before"], [3, "3 days before"], [7, "1 week before"]];
+const normT = t => (t || "").toLowerCase().replace(/\(.*?\)/g, "").replace(/[^a-z0-9]+/g, " ").trim();
+function snap(e, old) {
+  return { id: evId(e), title: e.title, date: e.date, when: e.when || "", start: e.start, end: e.end, endsNextDay: e.endsNextDay,
+    venue: e.venue || "", town: e.town || "", price: e.price || "", link: e.link || "",
+    lead: old ? old.lead : 1, note: old ? old.note : "", at: old ? old.at : todayISO(), movedFrom: old ? old.movedFrom : undefined };
+}
+function daysUntil(iso) { return Math.round((Date.parse(iso + "T12:00:00Z") - Date.parse(todayISO() + "T12:00:00Z")) / 864e5); }
+function rel(iso) { const n = daysUntil(iso); return n === 0 ? "today" : n === 1 ? "tomorrow" : n < 0 ? -n + " days ago" : n < 7 ? "in " + n + " days" : "in " + Math.round(n / 7) + " wk"; }
+function shortDay(iso) { return new Date(iso + "T12:00:00Z").toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", timeZone: "UTC" }); }
+/* Match each saved event to this week's list. Same id = unchanged. Otherwise look for a single upcoming event
+   with the same link or title+venue: that is a move. Nothing found and not yet past = no longer listed. */
+let SAVED = [];
+function resolveSaved() {
+  const today = todayISO(), byId = {};
+  EVENTS.forEach(e => { byId[evId(e)] = e; });
+  let changed = false;
+  SAVED = Object.keys(STORE.saved).map(k => {
+    const s = STORE.saved[k];
+    let e = byId[s.id], status = "ok";
+    if (!e) {
+      const generic = !s.link || /\/whats-on\/events\/?$/.test(s.link);
+      const cands = EVENTS.filter(x => x.date >= today && ((!generic && x.link === s.link && normT(x.title) === normT(s.title))
+        || (normT(x.title) === normT(s.title) && normT(x.venue) === normT(s.venue))));
+      if (cands.length === 1) {
+        e = cands[0]; status = "moved";
+        const from = shortDay(s.date) + (s.when ? " (" + s.when + ")" : "");
+        STORE.saved[k] = Object.assign(snap(e, s), { movedFrom: s.movedFrom || from });
+        changed = true;
+      } else status = s.date < today ? "past" : "gone";
+    }
+    const cur = STORE.saved[k];
+    if (e && status === "ok" && (cur.when !== (e.when || "") || cur.price !== (e.price || ""))) {
+      STORE.saved[k] = snap(e, cur); changed = true;
+    }
+    if (STORE.saved[k].movedFrom && status === "ok") status = "moved";
+    return { key: k, s: STORE.saved[k], e, status };
+  }).sort((a, b) => (a.s.date + (a.s.start || "99")).localeCompare(b.s.date + (b.s.start || "99")));
+  if (changed) persist(); else updateCount();
+}
+function toggleSave(e) {
+  const id = evId(e);
+  if (STORE.saved[id]) { delete STORE.saved[id]; toast("Removed from saved"); }
+  else { STORE.saved[id] = snap(e); toast("Saved. You'll get a reminder here the day before."); }
+  persist(); resolveSaved(); render();
+}
+function updateCount() {
+  const n = SAVED.filter(o => o.status !== "past").length, c = $("scount");
+  c.hidden = !n; c.textContent = n;
+}
+function renderBanner() {
+  const soon = [], warn = [];
+  SAVED.forEach(o => {
+    const d = daysUntil(o.s.date);
+    if ((o.status === "ok" || o.status === "moved") && d >= 0 && d <= Math.max(1, +o.s.lead))
+      soon.push("<b>" + esc(o.s.title) + "</b> " + rel(o.s.date) + (o.s.when ? ", " + esc(o.s.when) : ""));
+    if (o.status === "moved") warn.push("<b>" + esc(o.s.title) + "</b> moved to " + esc(shortDay(o.s.date)) + (o.s.when ? " (" + esc(o.s.when) + ")" : ""));
+    if (o.status === "gone") warn.push("<b>" + esc(o.s.title) + "</b> (" + esc(shortDay(o.s.date)) + ") is no longer listed. It may be cancelled.");
+  });
+  const b = $("banner");
+  b.innerHTML = (soon.length ? "<div>&#9200; " + soon.join(" &middot; ") + "</div>" : "")
+    + (warn.length ? '<div class="warn">&#9888; ' + warn.join(" &middot; ") + "</div>" : "");
+  b.hidden = !soon.length && !warn.length;
+}
+function setView(v) {
+  VIEW = v;
+  $("savedBtn").classList.toggle("on", v === "saved");
+  $("savedBtn").setAttribute("aria-pressed", String(v === "saved"));
+  $("filters").hidden = v === "saved";
+}
+function renderSaved() {
+  const up = SAVED.filter(o => o.status !== "past"), past = SAVED.length - up.length;
+  let h = '<div class="stool"><h2>Your saved events</h2>'
+    + '<button type="button" id="sAll">All to calendar</button>'
+    + '<button type="button" id="sShare">Share my list</button>'
+    + '<button type="button" id="sBack">&larr; All events</button></div>';
+  if (!up.length) h += '<p class="empty">Nothing saved yet. Tap &#9734; Save on any event. Saved events get a reminder banner here before they happen, and a notice if they move or drop off the calendar.</p>';
+  up.forEach(o => {
+    const s = o.s, link = safeUrl(s.link);
+    const title = link ? '<a href="' + esc(link) + '" target="_blank" rel="noopener">' + esc(s.title) + "</a>" : esc(s.title);
+    const flag = o.status === "moved" ? '<span class="flag moved">Moved from ' + esc(s.movedFrom) + "</span>"
+      + ' <button type="button" class="save" data-ack="' + esc(o.key) + '">OK</button>'
+      : o.status === "gone" ? '<span class="flag gone">No longer listed, may be cancelled</span>'
+      : "";
+    h += '<article class="ev saved sitem"><h3>' + title + '</h3><div class="meta">'
+      + [shortDay(s.date) + " (" + rel(s.date) + ")", s.when, s.venue, s.town].filter(Boolean).map(esc).join(" &middot; ") + "</div>"
+      + '<div class="tags">' + (s.price ? '<span class="tag">' + esc(s.price) + "</span>" : "") + flag + "</div>"
+      + '<div class="opts2">Remind me <select data-lead="' + esc(o.key) + '">'
+      + LEADS.map(([n, l]) => '<option value="' + n + '"' + (+s.lead === n ? " selected" : "") + ">" + l + "</option>").join("")
+      + '</select><button type="button" class="share" style="margin-left:0" data-unsave="' + esc(o.key) + '">Remove</button></div>'
+      + '<div style="grid-column:1"><textarea rows="1" data-note="' + esc(o.key) + '" placeholder="Note (who is going, tickets...)">' + esc(s.note || "") + "</textarea></div>"
+      + (o.status === "gone" ? "" : '<div class="cal"><a class="btn" href="' + esc(googleUrl(s)) + '" target="_blank" rel="noopener">+ Google / Android</a>'
+      + '<button type="button" data-sics="' + esc(o.key) + '">+ Apple / iCal</button></div>') + "</article>";
+  });
+  if (past) h += '<p class="note2">' + past + " past saved event" + (past > 1 ? "s" : "") + ' hidden. <button type="button" id="sClear">Clear</button></p>';
+  $("list").innerHTML = h;
+  $("sAll").disabled = !up.some(o => o.status !== "gone");
+  $("sShare").disabled = !up.length;
+}
+$("savedBtn").addEventListener("click", () => { setView(VIEW === "saved" ? "all" : "saved"); render(); scrollTo(0, 0); });
+$("banner").addEventListener("click", () => { if (VIEW !== "saved") { setView("saved"); render(); scrollTo(0, 0); } });
+$("list").addEventListener("click", ev => {
+  if (VIEW !== "saved") return;
+  const t = ev.target;
+  if (t.closest("#sBack")) { setView("all"); render(); return; }
+  if (t.closest("#sAll")) { const l = SAVED.filter(o => o.status === "ok" || o.status === "moved");
+    saveFile(icsFor(l.map(o => o.s), e => STORE.saved[e.id] ? STORE.saved[e.id].lead : 1), "stoop-saved-events.ics"); return; }
+  if (t.closest("#sShare")) { shareSaved(); return; }
+  if (t.closest("#sClear")) { SAVED.filter(o => o.status === "past").forEach(o => delete STORE.saved[o.key]); persist(); resolveSaved(); render(); return; }
+  const u = t.closest("[data-unsave]"); if (u) { delete STORE.saved[u.dataset.unsave]; persist(); resolveSaved(); render(); return; }
+  const a = t.closest("[data-ack]"); if (a) { delete STORE.saved[a.dataset.ack].movedFrom; persist(); resolveSaved(); render(); return; }
+  const i = t.closest("[data-sics]"); if (i) { const s = STORE.saved[i.dataset.sics]; saveFile(icsFor([s], s.lead), fileName(s)); }
+});
+$("list").addEventListener("change", ev => {
+  const l = ev.target.closest("[data-lead]"); if (!l) return;
+  STORE.saved[l.dataset.lead].lead = +l.value; persist(); renderBanner();
+});
+$("list").addEventListener("input", ev => {
+  const n = ev.target.closest("[data-note]"); if (!n) return;
+  STORE.saved[n.dataset.note].note = n.value; persist();
+});
+function shareSaved() {
+  const up = SAVED.filter(o => o.status === "ok" || o.status === "moved");
+  const url = pageUrl() + "#saved=" + encodeURIComponent(JSON.stringify(up.map(o => o.s.id)));
+  const text = "My saved events:\n" + up.map(o => "- " + o.s.title + ", " + shortDay(o.s.date) + (o.s.when ? " (" + o.s.when + ")" : "")).join("\n");
+  share("My Stoop Events list", text, url);
+}
+function importSaved(raw) {
+  let ids = []; try { ids = JSON.parse(decodeURIComponent(raw)); } catch (e) {}
+  history.replaceState(null, "", location.pathname + location.search);
+  const found = (Array.isArray(ids) ? ids : []).map(id => EVENTS.find(e => evId(e) === id)).filter(Boolean).filter(e => !STORE.saved[evId(e)]);
+  if (!found.length) { toast("Those events are already saved or no longer listed"); return; }
+  if (!confirm("A friend shared these events:\n\n" + found.map(e => e.title + ", " + shortDay(e.date)).join("\n") + "\n\nSave them in this browser?")) return;
+  found.forEach(e => { STORE.saved[evId(e)] = Object.assign(snap(e), { note: "Shared by a friend" }); });
+  persist(); resolveSaved(); setView("saved"); render();
+}
 
 /* ---------- multi-select filters ---------- */
 const SEL = { group: new Set(), town: new Set(), venue: new Set() };
@@ -408,6 +598,7 @@ document.addEventListener("keydown", ev => { if (ev.key === "Escape") closeAll()
 $("list").addEventListener("click", ev => {
   const b = ev.target.closest("[data-ics]"); if (b) downloadIcs(+b.dataset.ics);
   const s = ev.target.closest("[data-share]"); if (s) shareEvent(+s.dataset.share);
+  const v = ev.target.closest("[data-save]"); if (v) toggleSave(FILTERED[+v.dataset.save]);
 });
 ["q", "when", "free"].forEach(id => $(id).addEventListener("input", render));
 $("reset").addEventListener("click", () => {
@@ -429,6 +620,7 @@ fetch("events.json", { cache: "no-cache" }).then(r => r.json()).then(data => {
   const upd = data.updated ? new Date(data.updated).toLocaleDateString("en-US",
     { month: "long", day: "numeric", year: "numeric", timeZone: TZ }) : "";
   $("status").textContent = "Things to do in Bend, Sisters, Redmond and around. " + (upd ? "Updated " + upd + "." : "");
+  resolveSaved();
   render();
   openFromHash();
 }).catch(() => { $("status").textContent = "Could not load events."; });
