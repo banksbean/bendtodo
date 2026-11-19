@@ -56,6 +56,11 @@
   .opt:hover { background: var(--chip); }
   .opt input { width: auto; margin: 0; accent-color: var(--accent); }
   .opt .n { margin-left: auto; color: var(--muted); font-size: .8rem; }
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--card); }
+  .seg button { border: 0; border-radius: 0; padding: 5px 10px; background: transparent; color: var(--muted); }
+  .seg button + button { border-left: 1px solid var(--line); }
+  .seg button[aria-pressed="true"] { background: var(--accent); color: #fff; font-weight: 600; }
+  .tag.rec { background: transparent; border: 1px dashed var(--muted); color: var(--muted); }
   .mfoot { display: flex; justify-content: space-between; gap: 8px; padding-top: 8px; margin-top: 6px; border-top: 1px solid var(--line); }
   input, select { width: 100%; padding: 9px 10px; font: inherit; font-size: .95rem;
     color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 8px; }
@@ -113,6 +118,9 @@
   <div class="multi" id="m-venue"></div>
   <div class="row2">
     <label><input type="checkbox" id="free"> Free only</label>
+    <div class="seg" role="radiogroup" aria-label="Recurring">
+      <button type="button" data-rec="all" aria-pressed="true">All</button><button type="button" data-rec="one" aria-pressed="false">One-off</button><button type="button" data-rec="rec" aria-pressed="false">Recurring</button>
+    </div>
     <span id="shown"></span>
     <button id="reset" type="button">Reset filters</button>
   </div>
@@ -218,10 +226,11 @@ function inRange(e, mode, today) {
 function render() {
   const today = todayISO();
   const q = $("q").value.trim().toLowerCase();
-  const mode = $("when").value, free = $("free").checked;
+  const mode = $("when").value, free = $("free").checked, rec = REC;
   const pick = f => e => !SEL[f].size || SEL[f].has(e[f]);
   FILTERED = EVENTS.filter(e => e.date >= today && inRange(e, mode, today)
     && pick("group")(e) && pick("town")(e) && pick("venue")(e) && (!free || isFree(e.price))
+    && (rec === "all" || (rec === "rec") === !!e._rec)
     && (!q || [e.title, e.venue, e.town, e.category].join(" ").toLowerCase().includes(q)));
   $("shown").textContent = FILTERED.length + " event" + (FILTERED.length === 1 ? "" : "s");
   if (!FILTERED.length) { $("list").innerHTML = '<p class="empty">No events match these filters.</p>'; return; }
@@ -233,12 +242,39 @@ function render() {
     const meta = [e.when, e.venue, e.town].filter(Boolean).map(esc).join(" · ");
     html += '<article class="ev"><h3>' + title + '</h3><div class="meta">' + meta + "</div>"
       + '<div class="tags">' + (e.price ? '<span class="tag">' + esc(e.price) + "</span>" : "")
-      + (e.category ? '<span class="tag cat">' + esc(e.category) + "</span>" : "") + "</div>"
+      + (e.category ? '<span class="tag cat">' + esc(e.category) + "</span>" : "")
+      + (e._rec ? '<span class="tag rec">Recurring</span>' : "") + "</div>"
       + '<div class="cal"><a class="btn" href="' + esc(googleUrl(e)) + '" target="_blank" rel="noopener">+ Google / Android</a>'
       + '<button type="button" data-ics="' + i + '">+ Apple / iCal</button></div></article>';
   });
   $("list").innerHTML = html;
 }
+/* ---------- recurring detection ---------- */
+let REC = "all";
+const REC_WHEN = /\b(first|second|third|fourth|last)\s+(mon|tue|wed|thu|fri|sat|sun)|\b(mondays|tuesdays|wednesdays|thursdays|fridays|saturdays|sundays|weekly|monthly|daily|every)\b/i;
+function markRecurring(list) {
+  const norm = t => (t || "").toLowerCase().replace(/\(.*?\)/g, "").replace(/[^a-z0-9]+/g, " ").trim();
+  const dates = {}, add = (k, d) => { (dates[k] = dates[k] || new Set()).add(d); };
+  list.forEach(e => {
+    add("t|" + norm(e.title), e.date);
+    add("tv|" + norm(e.title) + "|" + norm(e.venue), e.date);
+    if (e.link && !/\/whats-on\/events\/?$/.test(e.link)) add("l|" + e.link, e.date);
+  });
+  list.forEach(e => {
+    const t = norm(e.title);
+    e._rec = REC_WHEN.test(e.when || "")
+      || dates["t|" + t].size >= 3
+      || dates["tv|" + t + "|" + norm(e.venue)].size >= 2
+      || (e.link && dates["l|" + e.link] && dates["l|" + e.link].size >= 2);
+  });
+}
+document.querySelector(".seg").addEventListener("click", ev => {
+  const b = ev.target.closest("[data-rec]"); if (!b) return;
+  REC = b.dataset.rec;
+  document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  render();
+});
+
 /* ---------- multi-select filters ---------- */
 const SEL = { group: new Set(), town: new Set(), venue: new Set() };
 const LABELS = { group: ["All categories", "categories"], town: ["All towns", "towns"], venue: ["All venues", "venues"] };
@@ -307,6 +343,7 @@ $("list").addEventListener("click", ev => {
 ["q", "when", "free"].forEach(id => $(id).addEventListener("input", render));
 $("reset").addEventListener("click", () => {
   $("q").value = ""; $("when").value = "all"; $("free").checked = false;
+  REC = "all"; document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", String(x.dataset.rec === "all")));
   Object.keys(SEL).forEach(f => {
     SEL[f].clear(); $("m-" + f).querySelectorAll("input[type=checkbox]").forEach(c => c.checked = false); setLabel(f);
   });
@@ -315,6 +352,7 @@ $("reset").addEventListener("click", () => {
 
 fetch("events.json", { cache: "no-cache" }).then(r => r.json()).then(data => {
   EVENTS = data.events || [];
+  markRecurring(EVENTS);
   buildMulti("group", false);
   buildMulti("town", true);
   buildMulti("venue", true);
