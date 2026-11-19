@@ -54,6 +54,8 @@
   .opts { max-height: 300px; overflow-y: auto; }
   .opt { display: flex; align-items: center; gap: 8px; padding: 6px 6px; border-radius: 6px; cursor: pointer; font-size: .92rem; }
   .opt:hover { background: var(--chip); }
+  .opt[hidden], [hidden] { display: none !important; }
+  .noopt { padding: 8px 6px; color: var(--muted); font-size: .88rem; }
   .opt input { width: auto; margin: 0; accent-color: var(--accent); }
   .opt .n { margin-left: auto; color: var(--muted); font-size: .8rem; }
   .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--card); }
@@ -383,7 +385,15 @@ function buildMulti(f, searchable) {
   const search = panel.querySelector(".msearch");
   if (search) search.addEventListener("input", () => {
     const t = search.value.trim().toLowerCase();
-    panel.querySelectorAll(".opt").forEach(o => { o.hidden = t && !o.textContent.toLowerCase().includes(t); });
+    let shown = 0;
+    panel.querySelectorAll(".opt").forEach(o => {
+      const hit = !t || o.querySelector("span").textContent.toLowerCase().includes(t);
+      o.hidden = !hit; if (hit) shown++;
+    });
+    let none = panel.querySelector(".noopt");
+    if (!shown && !none) { none = document.createElement("div"); none.className = "noopt"; none.textContent = "No matches";
+      panel.querySelector(".opts").appendChild(none); }
+    if (none) none.hidden = shown > 0;
   });
   panel.querySelector(".mclear").addEventListener("click", () => {
     SEL[f].clear(); panel.querySelectorAll("input[type=checkbox]").forEach(c => c.checked = false);
